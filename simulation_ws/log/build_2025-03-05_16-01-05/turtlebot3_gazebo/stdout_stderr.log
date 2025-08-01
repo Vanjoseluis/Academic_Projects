@@ -1,0 +1,563 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (gazebo).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+  CMakeLists.txt:23 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Checking for module 'bullet>=2.82'
+--   Found bullet, version 3.05
+-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+-- Found assimp: /usr/include (found version "5.2.0") 
+-- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Searching for dependencies of ignition-math6
+-- Looking for OGRE...
+-- OGRE_PREFIX_WATCH changed.
+-- Checking for module 'OGRE'
+--   Found OGRE, version 1.9.0
+-- Found Ogre Ghadamon (1.9.0)
+-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+-- Looking for OGRE_Paging...
+-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+-- Looking for OGRE_Terrain...
+-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+-- Looking for OGRE_Property...
+-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+-- Looking for OGRE_RTShaderSystem...
+-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+-- Looking for OGRE_Volume...
+-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+-- Looking for OGRE_Overlay...
+-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-transport8 -- found version 8.2.1
+-- Searching for dependencies of ignition-transport8
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+-- Config-file not installed for ZeroMQ -- checking for pkg-config
+-- Checking for module 'libzmq >= 4'
+--   Found libzmq , version 4.3.4
+-- Found ZeroMQ: TRUE (Required is at least version "4") 
+-- Checking for module 'uuid'
+--   Found uuid, version 2.37.2
+-- Found UUID: TRUE  
+-- Looking for ignition-msgs5 -- found version 5.8.1
+-- Searching for dependencies of ignition-msgs5
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 9.0.0
+-- Looking for ignition-msgs5 -- found version 5.8.1
+-- Looking for ignition-common3 -- found version 3.14.0
+-- Searching for dependencies of ignition-common3
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Found DL: TRUE  
+-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+-- Searching for <ignition-common3> component [graphics]
+-- Looking for ignition-common3-graphics -- found version 3.14.0
+-- Searching for dependencies of ignition-common3-graphics
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-fuel_tools4 -- found version 4.4.0
+-- Searching for dependencies of ignition-fuel_tools4
+-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+-- Checking for module 'jsoncpp'
+--   Found jsoncpp, version 1.9.5
+-- Found JSONCPP: TRUE  
+-- Checking for module 'libzip'
+--   Found libzip, version 1.7.3
+-- Found ZIP: TRUE  
+-- Looking for ignition-common3 -- found version 3.14.0
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-msgs5 -- found version 5.8.1
+-- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+-- Found geometry_msgs: 4.2.3 (/home/simulations/ros2_sims_ws/install/geometry_msgs/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found nav_msgs: 4.2.3 (/home/simulations/ros2_sims_ws/install/nav_msgs/share/nav_msgs/cmake)
+-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 4.2.3 (/home/simulations/ros2_sims_ws/install/sensor_msgs/share/sensor_msgs/cmake)
+-- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/simulation_ws/build/turtlebot3_gazebo
+[ 25%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o[0m
+[ 62%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[ 62%] Built target obstacle1
+[ 75%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[ 87%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[ 87%] Built target obstacle2
+[ 87%] Built target obstacles
+[100%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[100%] Built target turtlebot3_drive
+-- Install configuration: ""
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+-- Set runtime path of "/home/user/simulation_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive" to ""
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/start_turtlebot3_world.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/rviz.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/main_turtlebot3_lab.launch.xml
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/start_turtlebot3_world_standalone.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_white
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_white/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_white/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_4
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_4/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_4/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_3
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_3/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_3/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/grasping_plate
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/grasping_plate/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/grasping_plate/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/Lego-Person-v001.mtl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/LowPolyAnimations4Game.obj
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/pedestrian1.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/LowPolyAnimations4Game.mtl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/pedestrian2.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/Lego-Person-v001.obj
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/pedestrian_theconstructcolours.blend1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/walking-character
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/walking-character/93731 - LICENSE.html
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/walking-character/LowPolyAnimations4Game.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/lego-person-w-face-texture-rig
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/lego-person-w-face-texture-rig/86309 - LICENSE.html
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/lego-person-w-face-texture-rig/Lego-Person-v001.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/pedestrian_theconstructcolours.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/guy-character-rig
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/guy-character-rig/BLENDSWAP_LICENSE.txt
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/guy-character-rig/Guy.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/walls.blend1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/gradient.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/Robotnik_Automation_logo.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/Circuit_lab_The_Construct_2020.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/gradient_ilustration.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/ring_v2.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/ring_v2.blend1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/farming-farms-agriculture-rural-countryside-landscape-green-country-tractor.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/walls.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/nvidia-logo.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/Circuit_lab_The_Construct_2020.pdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/ring_v2.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism/meshes/triangular_prism.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_blue
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_blue/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_blue/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_orange
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_orange/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_orange/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes/robotarm_floor_v1.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes/robotarm_floor_v1.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes/robotarm_floor_v1.blend1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes/robotarm_floor_v1_texture.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes/floor_cube.stl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cardboard_obstacle
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cardboard_obstacle/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cardboard_obstacle/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/thumbnails
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/thumbnails/0.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/materials
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/materials/scripts
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/materials/scripts/inter.material
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/materials/textures
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/materials/textures/road_i.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/thumbnails
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/thumbnails/0.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/materials
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/materials/scripts
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/materials/scripts/diag.material
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/materials/textures
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/materials/textures/road_d.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_yellow
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_yellow/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_yellow/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/meshes/RingCircuit.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/meshes/ring_road.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/blender
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/blender/road.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/blender/road.blend1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/meshes/roadsing_turnban.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/meshes/turnban.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/meshes/roadsing_turnban_v2.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/uk-road-signs-pack-1-updated-version
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/uk-road-signs-pack-1-updated-version/BLENDSWAP_LICENSE.txt
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/uk-road-signs-pack-1-updated-version/road signs - pack 1 by Richard Edwards.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/roadsing_turnban.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/roadsing_turnban_v2.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/german-street-signs
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/german-street-signs/street_signs_all.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/german-street-signs/93735 - LICENSE.html
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/roadsing_turnban.blend1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/roadsign_custom.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors/r200.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors/r200.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors/astra.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors/astra.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors/lds.stl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_3
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_3/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_3/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_7
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_7/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_7/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_1/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_1/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/overlord_camera
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/overlord_camera/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/overlord_camera/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2_clone
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2_clone/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2_clone/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/meshes/signal_stop.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/meshes/stop.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/meshes/signal_stop_fix.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_pink
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_pink/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_pink/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/right_tire.stl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/lds_v2_single.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/right_tire_v2.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/burguer_textures.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/burger_base_v2_single.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/burger_base.stl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/left_tire.stl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/cam.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/left_tire_v2.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/black.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/lds.stl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/lds.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/burger_base.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/right_tire.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/left_tire.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/materials
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/materials/textures
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/materials/textures/kinect.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/meshes/kinect.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/kinect.xml
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_old
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_old/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_old/model-1_4.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_old/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_pedestrian
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_pedestrian/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_pedestrian/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_3
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_3/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_3/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/trafficlights.obj
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/trafficlight2.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/trafficlight.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/TrafficLight.obj
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/trafficlights.mtl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/TrafficLight.mtl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/low-poly-traffic-light
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/low-poly-traffic-light/Traffic Light.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/low-poly-traffic-light/Traffic Light.blend1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/low-poly-traffic-light/79768 - LICENSE.html
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/trafficlightcustom.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/traffic-lights-usa-style
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/traffic-lights-usa-style/BLENDSWAP_LICENSE.txt
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/traffic-lights-usa-style/traffic lights.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/traffic-lights-usa-style/traffic lights.blend1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/trafficlightcustom.blend1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_2
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_2/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_2/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_stop
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_stop/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_stop/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_4
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_4/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_4/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_2
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_2/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_2/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_4.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_7.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_5.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_5.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_6.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_7.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_2.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_1.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_4.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_3.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_2.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_3.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_1.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_6.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/blender
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/blender/ar_tag.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/blender/ar_tag_1.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/blender/ar_tag_1.blend1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/blender/ar_tag.blend1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_purple
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_purple/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_purple/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_6
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_6/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_6/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian1
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian1/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian1/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_5
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_5/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_5/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/wheels
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/wheels/right_tire.stl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/wheels/left_tire.stl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/thumbnails
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/thumbnails/0.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/materials
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/materials/scripts
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/materials/scripts/plane.material
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/materials/textures
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/materials/textures/road_p.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/area_charging
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/area_charging/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/area_charging/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_direccion_obligada
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_direccion_obligada/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_direccion_obligada/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_green
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_green/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_green/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_robot_arm
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_robot_arm/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_robot_arm/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/meshes/pedestrian.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/meshes/signal_pedestrian.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/meshes/signal_pedestrian_fix.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red_big
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red_big/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red_big/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/bases
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/bases/waffle_base.stl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/bases/burger_base.stl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/bases/waffle_pi_base.stl
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_starting
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_starting/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_starting/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/meshes/EightCircuit.png
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/meshes/eightroad.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/blender
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/blender/eightroad.blend
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/meshes
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/meshes/signal_dir_obligada.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/meshes/direccion_obligada.jpg
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/meshes/signal_dir_obligada_fix.dae
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_0
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_0/model.sdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_0/model.config
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_burger.rviz
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/realrobotlab_v1.world
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/include/
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+-- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml

@@ -1,0 +1,569 @@
+[0.047s] Invoking command in '/home/user/simulation_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake /home/user/simulation_ws/src/turtlebot3_ros2/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/user/simulation_ws/install/turtlebot3_gazebo
+[0.513s] -- The C compiler identification is GNU 11.4.0
+[0.513s] -- The CXX compiler identification is GNU 11.4.0
+[0.513s] -- Detecting C compiler ABI info
+[0.513s] -- Detecting C compiler ABI info - done
+[0.513s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.513s] -- Detecting C compile features
+[0.513s] -- Detecting C compile features - done
+[0.513s] -- Detecting CXX compiler ABI info
+[0.553s] -- Detecting CXX compiler ABI info - done
+[0.564s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.564s] -- Detecting CXX compile features
+[0.564s] -- Detecting CXX compile features - done
+[0.579s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.935s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.318s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.318s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[1.318s]   does not match the name of the calling package (gazebo).  This can lead to
+[1.318s]   problems in calling code that expects `find_package` result variables
+[1.318s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.318s] Call Stack (most recent call first):
+[1.318s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[1.318s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[1.318s]   CMakeLists.txt:23 (find_package)
+[1.318s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.318s] [0m
+[1.319s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.326s] -- Checking for module 'bullet>=2.82'
+[1.354s] --   Found bullet, version 3.05
+[1.675s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.832s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.924s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[2.318s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[2.360s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.396s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.416s] -- Searching for dependencies of ignition-math6
+[2.417s] -- Looking for OGRE...
+[2.417s] -- OGRE_PREFIX_WATCH changed.
+[2.426s] -- Checking for module 'OGRE'
+[2.458s] --   Found OGRE, version 1.9.0
+[2.554s] -- Found Ogre Ghadamon (1.9.0)
+[2.582s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.596s] -- Looking for OGRE_Paging...
+[2.619s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.619s] -- Looking for OGRE_Terrain...
+[2.633s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.633s] -- Looking for OGRE_Property...
+[2.648s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.648s] -- Looking for OGRE_RTShaderSystem...
+[2.662s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.662s] -- Looking for OGRE_Volume...
+[2.676s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.676s] -- Looking for OGRE_Overlay...
+[2.695s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[3.120s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.133s] -- Looking for ignition-transport8 -- found version 8.2.1
+[3.134s] -- Searching for dependencies of ignition-transport8
+[3.181s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[3.223s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[3.229s] -- Checking for module 'libzmq >= 4'
+[3.252s] --   Found libzmq , version 4.3.4
+[3.309s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[3.320s] -- Checking for module 'uuid'
+[3.356s] --   Found uuid, version 2.37.2
+[3.411s] -- Found UUID: TRUE  
+[3.423s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.424s] -- Searching for dependencies of ignition-msgs5
+[3.468s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.475s] -- Checking for module 'tinyxml2'
+[3.500s] --   Found tinyxml2, version 9.0.0
+[3.555s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.567s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.567s] -- Searching for dependencies of ignition-common3
+[3.568s] -- Looking for dlfcn.h - found
+[3.570s] -- Looking for libdl - found
+[3.571s] -- Found DL: TRUE  
+[3.597s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[3.597s] -- Searching for <ignition-common3> component [graphics]
+[3.609s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[3.610s] -- Searching for dependencies of ignition-common3-graphics
+[3.610s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.623s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[3.624s] -- Searching for dependencies of ignition-fuel_tools4
+[3.757s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[3.786s] -- Checking for module 'jsoncpp'
+[3.811s] --   Found jsoncpp, version 1.9.5
+[3.862s] -- Found JSONCPP: TRUE  
+[3.875s] -- Checking for module 'libzip'
+[3.896s] --   Found libzip, version 1.7.3
+[3.942s] -- Found ZIP: TRUE  
+[3.943s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.943s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.943s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.968s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[3.972s] -- Found geometry_msgs: 4.2.3 (/home/simulations/ros2_sims_ws/install/geometry_msgs/share/geometry_msgs/cmake)
+[4.099s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.128s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.161s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.203s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.262s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.465s] -- Found nav_msgs: 4.2.3 (/home/simulations/ros2_sims_ws/install/nav_msgs/share/nav_msgs/cmake)
+[4.614s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[4.762s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.775s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.026s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.097s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.221s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.272s] -- Found Threads: TRUE  
+[5.453s] -- Found sensor_msgs: 4.2.3 (/home/simulations/ros2_sims_ws/install/sensor_msgs/share/sensor_msgs/cmake)
+[5.559s] -- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)
+[5.730s] -- Configuring done
+[5.792s] -- Generating done
+[5.796s] -- Build files have been written to: /home/user/simulation_ws/build/turtlebot3_gazebo
+[5.821s] Invoked command in '/home/user/simulation_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake /home/user/simulation_ws/src/turtlebot3_ros2/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/user/simulation_ws/install/turtlebot3_gazebo
+[5.822s] Invoking command in '/home/user/simulation_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/simulation_ws/build/turtlebot3_gazebo -- -j8 -l8
+[5.958s] [ 25%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[5.958s] [ 25%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o[0m
+[5.958s] [ 37%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o[0m
+[5.963s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o[0m
+[21.924s] [ 62%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[22.217s] [ 62%] Built target obstacle1
+[22.296s] [ 75%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[22.547s] [ 87%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[22.551s] [ 87%] Built target obstacle2
+[22.790s] [ 87%] Built target obstacles
+[23.486s] [100%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[23.957s] [100%] Built target turtlebot3_drive
+[23.971s] Invoked command in '/home/user/simulation_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/simulation_ws/build/turtlebot3_gazebo -- -j8 -l8
+[24.054s] Invoking command in '/home/user/simulation_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/simulation_ws/build/turtlebot3_gazebo
+[24.066s] -- Install configuration: ""
+[24.066s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[24.075s] -- Set runtime path of "/home/user/simulation_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive" to ""
+[24.075s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch
+[24.075s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[24.075s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[24.075s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[24.075s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/start_turtlebot3_world.launch.py
+[24.075s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[24.076s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/rviz.launch.py
+[24.076s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[24.076s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[24.076s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[24.076s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/main_turtlebot3_lab.launch.xml
+[24.076s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/start_turtlebot3_world_standalone.launch.py
+[24.076s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[24.076s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[24.077s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models
+[24.077s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_white
+[24.077s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_white/model.sdf
+[24.077s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_white/model.config
+[24.077s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_4
+[24.077s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_4/model.sdf
+[24.077s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_4/model.config
+[24.077s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_3
+[24.078s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_3/model.sdf
+[24.078s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_3/model.config
+[24.078s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/grasping_plate
+[24.078s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/grasping_plate/model.sdf
+[24.078s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/grasping_plate/model.config
+[24.078s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian
+[24.078s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/model.sdf
+[24.078s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes
+[24.078s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/Lego-Person-v001.mtl
+[24.078s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/LowPolyAnimations4Game.obj
+[24.079s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/pedestrian1.dae
+[24.080s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/LowPolyAnimations4Game.mtl
+[24.080s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/pedestrian2.dae
+[24.080s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/meshes/Lego-Person-v001.obj
+[24.099s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender
+[24.099s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/pedestrian_theconstructcolours.blend1
+[24.101s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/walking-character
+[24.101s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/walking-character/93731 - LICENSE.html
+[24.101s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/walking-character/LowPolyAnimations4Game.blend
+[24.104s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/lego-person-w-face-texture-rig
+[24.104s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/lego-person-w-face-texture-rig/86309 - LICENSE.html
+[24.104s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/lego-person-w-face-texture-rig/Lego-Person-v001.blend
+[24.107s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/pedestrian_theconstructcolours.blend
+[24.109s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/guy-character-rig
+[24.109s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/guy-character-rig/BLENDSWAP_LICENSE.txt
+[24.109s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/blender/guy-character-rig/Guy.blend
+[24.114s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian/model.config
+[24.114s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2
+[24.114s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/model.sdf
+[24.114s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes
+[24.114s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/walls.blend1
+[24.115s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/gradient.png
+[24.116s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/Robotnik_Automation_logo.jpg
+[24.116s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/Circuit_lab_The_Construct_2020.png
+[24.116s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/gradient_ilustration.jpg
+[24.117s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/ring_v2.dae
+[24.117s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/ring_v2.blend1
+[24.118s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/farming-farms-agriculture-rural-countryside-landscape-green-country-tractor.jpg
+[24.119s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/walls.blend
+[24.120s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/nvidia-logo.jpg
+[24.120s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/Circuit_lab_The_Construct_2020.pdf
+[24.121s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/meshes/ring_v2.blend
+[24.122s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road_v2/model.config
+[24.123s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism
+[24.123s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism/model.sdf
+[24.123s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism/meshes
+[24.123s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism/meshes/triangular_prism.dae
+[24.123s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism/model.config
+[24.123s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_blue
+[24.123s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_blue/model.sdf
+[24.123s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_blue/model.config
+[24.124s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world
+[24.124s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box
+[24.124s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[24.124s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[24.124s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[24.124s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2
+[24.124s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[24.124s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[24.124s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls
+[24.125s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[24.125s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[24.125s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin
+[24.126s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+[24.126s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+[24.126s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+[24.126s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+[24.126s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1
+[24.126s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[24.126s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[24.126s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[24.126s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles
+[24.127s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[24.127s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[24.127s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_orange
+[24.127s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_orange/model.sdf
+[24.127s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_orange/model.config
+[24.127s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1
+[24.127s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/model.sdf
+[24.127s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes
+[24.127s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes/robotarm_floor_v1.blend
+[24.128s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes/robotarm_floor_v1.dae
+[24.128s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes/robotarm_floor_v1.blend1
+[24.129s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes/robotarm_floor_v1_texture.png
+[24.130s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/meshes/floor_cube.stl
+[24.130s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/robotarm_floor_v1/model.config
+[24.130s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cardboard_obstacle
+[24.130s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cardboard_obstacle/model.sdf
+[24.130s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cardboard_obstacle/model.config
+[24.131s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house
+[24.131s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[24.131s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[24.131s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new
+[24.131s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/thumbnails
+[24.131s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/thumbnails/0.png
+[24.132s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/materials
+[24.132s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/materials/scripts
+[24.132s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/materials/scripts/inter.material
+[24.132s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/materials/textures
+[24.132s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/materials/textures/road_i.png
+[24.133s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/model.sdf
+[24.133s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_inter_new/model.config
+[24.133s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new
+[24.133s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/thumbnails
+[24.133s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/thumbnails/0.png
+[24.134s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/materials
+[24.134s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/materials/scripts
+[24.134s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/materials/scripts/diag.material
+[24.134s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/materials/textures
+[24.134s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/materials/textures/road_d.png
+[24.135s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/model.sdf
+[24.135s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_diag_new/model.config
+[24.135s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_yellow
+[24.135s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_yellow/model.sdf
+[24.135s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_yellow/model.config
+[24.135s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road
+[24.135s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/model.sdf
+[24.136s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/meshes
+[24.136s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/meshes/RingCircuit.png
+[24.138s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/meshes/ring_road.dae
+[24.138s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/blender
+[24.139s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/blender/road.blend
+[24.140s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/blender/road.blend1
+[24.141s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ring_road/model.config
+[24.141s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common
+[24.141s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes
+[24.141s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[24.141s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[24.141s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[24.142s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[24.142s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[24.142s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[24.142s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[24.142s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban
+[24.142s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/model.sdf
+[24.143s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/meshes
+[24.143s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/meshes/roadsing_turnban.dae
+[24.143s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/meshes/turnban.png
+[24.143s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/meshes/roadsing_turnban_v2.dae
+[24.143s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender
+[24.143s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/uk-road-signs-pack-1-updated-version
+[24.143s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/uk-road-signs-pack-1-updated-version/BLENDSWAP_LICENSE.txt
+[24.144s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/uk-road-signs-pack-1-updated-version/road signs - pack 1 by Richard Edwards.blend
+[24.145s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/roadsing_turnban.blend
+[24.146s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/roadsing_turnban_v2.blend
+[24.147s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/german-street-signs
+[24.147s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/german-street-signs/street_signs_all.blend
+[24.188s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/german-street-signs/93735 - LICENSE.html
+[24.188s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/roadsing_turnban.blend1
+[24.189s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/blender/roadsign_custom.blend
+[24.190s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/street_sign_turnban/model.config
+[24.190s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors
+[24.190s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors/r200.jpg
+[24.190s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors/r200.dae
+[24.191s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors/astra.jpg
+[24.191s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors/astra.dae
+[24.204s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensors/lds.stl
+[24.206s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_3
+[24.206s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_3/model.sdf
+[24.206s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_3/model.config
+[24.206s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_7
+[24.206s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_7/model.sdf
+[24.206s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_7/model.config
+[24.206s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_1
+[24.207s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_1/model.sdf
+[24.207s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_1/model.config
+[24.207s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/overlord_camera
+[24.207s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/overlord_camera/model.sdf
+[24.207s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/overlord_camera/model.config
+[24.207s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2_clone
+[24.207s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2_clone/model.sdf
+[24.208s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2_clone/model.config
+[24.208s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism
+[24.208s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/model.sdf
+[24.208s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/meshes
+[24.209s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/meshes/signal_stop.dae
+[24.209s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/meshes/stop.jpg
+[24.209s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/meshes/signal_stop_fix.dae
+[24.209s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/stop_sign_prism/model.config
+[24.209s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_pink
+[24.209s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_pink/model.sdf
+[24.209s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_pink/model.config
+[24.209s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger
+[24.209s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[24.210s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes
+[24.210s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/right_tire.stl
+[24.211s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/lds_v2_single.dae
+[24.214s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/right_tire_v2.dae
+[24.216s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/burguer_textures.png
+[24.216s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/burger_base_v2_single.dae
+[24.235s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/burger_base.stl
+[24.243s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/left_tire.stl
+[24.244s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/cam.dae
+[24.245s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/left_tire_v2.dae
+[24.247s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/black.png
+[24.247s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/lds.stl
+[24.248s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[24.248s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae
+[24.249s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/lds.dae
+[24.250s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/burger_base.dae
+[24.265s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/right_tire.dae
+[24.270s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/left_tire.dae
+[24.275s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[24.275s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi
+[24.275s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[24.276s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[24.276s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[24.276s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera
+[24.276s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/materials
+[24.276s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/materials/textures
+[24.276s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/materials/textures/kinect.png
+[24.276s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/model.sdf
+[24.276s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/meshes
+[24.276s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/meshes/kinect.dae
+[24.278s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/model.config
+[24.278s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/kinect_camera/kinect.xml
+[24.278s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_old
+[24.278s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_old/model.sdf
+[24.278s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_old/model-1_4.sdf
+[24.278s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_old/model.config
+[24.279s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_pedestrian
+[24.279s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_pedestrian/model.sdf
+[24.279s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_pedestrian/model.config
+[24.279s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_3
+[24.279s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_3/model.sdf
+[24.279s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_3/model.config
+[24.280s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight
+[24.280s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/model.sdf
+[24.280s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes
+[24.280s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/trafficlights.obj
+[24.280s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/trafficlight2.dae
+[24.281s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/trafficlight.dae
+[24.281s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/TrafficLight.obj
+[24.281s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/trafficlights.mtl
+[24.281s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/meshes/TrafficLight.mtl
+[24.281s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender
+[24.282s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/low-poly-traffic-light
+[24.282s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/low-poly-traffic-light/Traffic Light.blend
+[24.283s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/low-poly-traffic-light/Traffic Light.blend1
+[24.285s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/low-poly-traffic-light/79768 - LICENSE.html
+[24.286s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/trafficlightcustom.blend
+[24.287s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/traffic-lights-usa-style
+[24.287s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/traffic-lights-usa-style/BLENDSWAP_LICENSE.txt
+[24.287s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/traffic-lights-usa-style/traffic lights.blend
+[24.290s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/traffic-lights-usa-style/traffic lights.blend1
+[24.293s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/blender/trafficlightcustom.blend1
+[24.294s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trafficlight/model.config
+[24.294s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_2
+[24.294s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_2/model.sdf
+[24.295s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_2/model.config
+[24.295s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_stop
+[24.295s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_stop/model.sdf
+[24.295s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_stop/model.config
+[24.295s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_4
+[24.295s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_4/model.sdf
+[24.295s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_4/model.config
+[24.295s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_2
+[24.296s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_2/model.sdf
+[24.296s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging_2/model.config
+[24.296s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1
+[24.296s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/model.sdf
+[24.296s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes
+[24.296s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_4.dae
+[24.297s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_7.dae
+[24.297s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_5.jpg
+[24.297s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_5.dae
+[24.297s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_6.jpg
+[24.297s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_7.jpg
+[24.297s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_2.dae
+[24.297s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_1.dae
+[24.298s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_4.jpg
+[24.298s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_3.jpg
+[24.298s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_2.jpg
+[24.298s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_3.dae
+[24.299s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/image_1.jpg
+[24.299s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/meshes/ar_tag_6.dae
+[24.299s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/blender
+[24.299s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/blender/ar_tag.blend
+[24.300s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/blender/ar_tag_1.blend
+[24.301s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/blender/ar_tag_1.blend1
+[24.303s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/blender/ar_tag.blend1
+[24.304s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_1/model.config
+[24.304s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world
+[24.304s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[24.304s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes
+[24.305s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[24.305s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[24.305s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[24.305s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[24.305s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_purple
+[24.305s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_purple/model.sdf
+[24.305s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_purple/model.config
+[24.306s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2
+[24.306s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2/model.sdf
+[24.306s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_2/model.config
+[24.306s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle
+[24.306s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[24.306s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[24.306s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[24.307s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging
+[24.307s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging/model.sdf
+[24.307s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_charging/model.config
+[24.307s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_6
+[24.307s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_6/model.sdf
+[24.307s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_6/model.config
+[24.307s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian1
+[24.307s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian1/model.sdf
+[24.308s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian1/model.config
+[24.308s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_5
+[24.308s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_5/model.sdf
+[24.308s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/ar_tag_5/model.config
+[24.308s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/wheels
+[24.308s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/wheels/right_tire.stl
+[24.309s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/wheels/left_tire.stl
+[24.311s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new
+[24.311s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/thumbnails
+[24.312s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/thumbnails/0.png
+[24.312s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/materials
+[24.312s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/materials/scripts
+[24.312s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/materials/scripts/plane.material
+[24.312s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/materials/textures
+[24.312s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/materials/textures/road_p.png
+[24.313s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/model.sdf
+[24.313s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_plane_new/model.config
+[24.313s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red
+[24.314s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red/model.sdf
+[24.314s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red/model.config
+[24.314s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/area_charging
+[24.314s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/area_charging/model.sdf
+[24.314s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/area_charging/model.config
+[24.314s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_direccion_obligada
+[24.314s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_direccion_obligada/model.sdf
+[24.315s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/triangular_prism_direccion_obligada/model.config
+[24.315s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_green
+[24.315s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_green/model.sdf
+[24.315s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_green/model.config
+[24.315s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_robot_arm
+[24.315s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_robot_arm/model.sdf
+[24.315s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_robot_arm/model.config
+[24.315s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism
+[24.316s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/model.sdf
+[24.316s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/meshes
+[24.316s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/meshes/pedestrian.png
+[24.316s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/meshes/signal_pedestrian.dae
+[24.316s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/meshes/signal_pedestrian_fix.dae
+[24.316s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pedestrian_sign_prism/model.config
+[24.316s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red_big
+[24.316s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red_big/model.sdf
+[24.317s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/play_cube_red_big/model.config
+[24.317s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/bases
+[24.317s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/bases/waffle_base.stl
+[24.340s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/bases/burger_base.stl
+[24.347s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/bases/waffle_pi_base.stl
+[24.359s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_starting
+[24.359s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_starting/model.sdf
+[24.359s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/road_starting/model.config
+[24.359s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road
+[24.359s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/model.sdf
+[24.359s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/meshes
+[24.360s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/meshes/EightCircuit.png
+[24.362s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/meshes/eightroad.dae
+[24.362s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/blender
+[24.363s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/blender/eightroad.blend
+[24.363s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/eight_road/model.config
+[24.364s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall
+[24.364s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall/model.sdf
+[24.364s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall/model.config
+[24.364s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism
+[24.364s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/model.sdf
+[24.364s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/meshes
+[24.364s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/meshes/signal_dir_obligada.dae
+[24.364s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/meshes/direccion_obligada.jpg
+[24.365s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/meshes/signal_dir_obligada_fix.dae
+[24.365s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/direccion_obligada_sign_prism/model.config
+[24.365s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_0
+[24.365s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_0/model.sdf
+[24.365s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/working_wall_0/model.config
+[24.365s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz
+[24.365s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[24.365s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_burger.rviz
+[24.366s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf
+[24.366s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[24.366s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[24.366s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[24.366s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[24.366s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds
+[24.366s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/realrobotlab_v1.world
+[24.366s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[24.367s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[24.367s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[24.367s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[24.367s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[24.367s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[24.367s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[24.367s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/include/
+[24.367s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo
+[24.368s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[24.368s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[24.368s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[24.368s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[24.368s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[24.368s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[24.368s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[24.368s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[24.368s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[24.369s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[24.369s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[24.369s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[24.369s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[24.369s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.369s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.369s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[24.370s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[24.370s] -- Installing: /home/user/simulation_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[24.373s] Invoked command in '/home/user/simulation_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/simulation_ws/build/turtlebot3_gazebo

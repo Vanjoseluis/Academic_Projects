@@ -1,0 +1,61 @@
+[0.074s] Invoking command in '/home/user/simulation_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake /home/user/simulation_ws/src/turtlebot3/turtlebot3_description -DCMAKE_INSTALL_PREFIX=/home/user/simulation_ws/install/turtlebot3_description
+[0.545s] -- The C compiler identification is GNU 11.4.0
+[0.545s] -- The CXX compiler identification is GNU 11.4.0
+[0.545s] -- Detecting C compiler ABI info
+[0.545s] -- Detecting C compiler ABI info - done
+[0.545s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.545s] -- Detecting C compile features
+[0.545s] -- Detecting C compile features - done
+[0.545s] -- Detecting CXX compiler ABI info
+[0.565s] -- Detecting CXX compiler ABI info - done
+[0.580s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.580s] -- Detecting CXX compile features
+[0.581s] -- Detecting CXX compile features - done
+[0.598s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.949s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.336s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[1.734s] -- Configuring done
+[1.734s] -- Generating done
+[1.734s] -- Build files have been written to: /home/user/simulation_ws/build/turtlebot3_description
+[1.755s] Invoked command in '/home/user/simulation_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake /home/user/simulation_ws/src/turtlebot3/turtlebot3_description -DCMAKE_INSTALL_PREFIX=/home/user/simulation_ws/install/turtlebot3_description
+[1.758s] Invoking command in '/home/user/simulation_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/simulation_ws/build/turtlebot3_description -- -j8 -l8
+[1.838s] Invoked command in '/home/user/simulation_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/simulation_ws/build/turtlebot3_description -- -j8 -l8
+[1.911s] Invoking command in '/home/user/simulation_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/simulation_ws/build/turtlebot3_description
+[1.932s] -- Install configuration: ""
+[1.932s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes
+[1.932s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors
+[1.932s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.jpg
+[1.932s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.dae
+[1.933s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.jpg
+[1.933s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.dae
+[1.945s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/lds.stl
+[1.946s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels
+[1.946s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/right_tire.stl
+[1.948s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/left_tire.stl
+[1.950s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases
+[1.950s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_base.stl
+[1.979s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/burger_base.stl
+[1.991s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_pi_base.stl
+[2.003s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/rviz
+[2.003s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/rviz/model.rviz
+[2.004s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/urdf
+[2.004s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle.urdf
+[2.004s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle_pi.urdf
+[2.005s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/common_properties.urdf
+[2.005s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_burger.urdf
+[2.005s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/ament_index/resource_index/package_run_dependencies/turtlebot3_description
+[2.005s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/ament_index/resource_index/parent_prefix_path/turtlebot3_description
+[2.006s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.sh
+[2.006s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.dsv
+[2.006s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/environment/path.sh
+[2.007s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/environment/path.dsv
+[2.007s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.bash
+[2.007s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.sh
+[2.007s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.zsh
+[2.007s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.dsv
+[2.007s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/package.dsv
+[2.008s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/ament_index/resource_index/packages/turtlebot3_description
+[2.008s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig.cmake
+[2.008s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig-version.cmake
+[2.008s] -- Installing: /home/user/simulation_ws/install/turtlebot3_description/share/turtlebot3_description/package.xml
+[2.012s] Invoked command in '/home/user/simulation_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/simulation_ws/install/turtlebot3_teleop:/home/user/simulation_ws/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/linux_basics_project:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/simulation_ws/build/turtlebot3_description
