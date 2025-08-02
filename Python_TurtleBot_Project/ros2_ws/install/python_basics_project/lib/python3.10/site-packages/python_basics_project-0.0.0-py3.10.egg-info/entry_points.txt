@@ -1,0 +1,3 @@
+[console_scripts]
+robot_interface = python_basics_project.robot_control:main
+
