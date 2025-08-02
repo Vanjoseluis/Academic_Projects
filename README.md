@@ -14,15 +14,19 @@ My main areas of interest include:
 - 🏭 Industrial automation  
 - 🔌 Embedded systems  
 - 📡 Robot Operating System 2 (ROS2)  
-- 👁️ Perception and sensor integration  
+- 👁️ Perception and sensor integration
+
+---
+
+## 📁 Project Index  
 
 - [Linux_TheConstruct_Project](Linux_TheConstruct_Project/)
 - [Python_TurtleBot_Project](Python_TurtleBot_Project/)
 
-<br><br>
+
 
 ---
-
+<br><br>
 ## 📬 Contact
 
 If you'd like to know more about my work or get in touch, feel free to reach me through:
@@ -32,3 +36,4 @@ If you'd like to know more about my work or get in touch, feel free to reach me 
 - Email: vanjoseluis@gmail.com 
 
 ---
+
