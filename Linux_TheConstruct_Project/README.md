@@ -25,4 +25,4 @@ Designed for simplicity and education, this is a lightweight alternative to Pyth
 
 #
 This project is licensed under the MIT License. See the LICENSE file for details.
-Made with 🐚 and ❤️ for educational robotics.
+Made with ❤️ for educational robotics.
