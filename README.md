@@ -1,9 +1,13 @@
 # 🤖 Academic Projects – José Luis Pérez Martín
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![ROS2](https://img.shields.io/badge/ROS2-Humble-purple)
+![Linux](https://img.shields.io/badge/Linux-CLI-black)
+
 The Projects that I consider worth saving in this treasure chest called GitHub
 
 #
-Welcome to my academic project repository. I am currently pursuing a Bachelor's Degree in Robotics Engineering at the University of Málaga (UMA), class of 2022–2026. This repository contains a curated collection of projects developed throughout my academic training, focused on key areas such as robotics, automation, control systems, and embedded programming.
+Welcome to my academic project repository. I am currently pursuing a Bachelor's Degree in Robotics Engineering at the University of Málaga (UMA). This repository contains a curated selection of academic projects developed during my training, focused on key areas such as robotics, automation, control systems, and embedded programming.
 
 Each folder represents an independent project and includes a dedicated `README.md`, source code, and supporting materials where applicable. This repository serves as a structured index for easy navigation, review, and reference.
 
@@ -20,9 +24,11 @@ My main areas of interest include:
 
 ## 📁 Project Index  
 
-- [Linux_TheConstruct_Project](Linux_TheConstruct_Project/)
-- [Python_TurtleBot_Project](Python_TurtleBot_Project/)
+- [Linux_TheConstruct_Project](Linux_TheConstruct_Project/). Scripts developed during Linux training for robotics. | Bash, Linux CLI |
+- [Python_TurtleBot_Project](Python_TurtleBot_Project/). Python scripts controlling a TurtleBot in simulation. | Python, ROS2, Gazebo |
 
+
+These academic projects laid the foundation for my current work in robotics software, including my recent contributions to the ROS 2 ecosystem and ros-controls.
 
 
 ---
@@ -36,4 +42,5 @@ If you'd like to know more about my work or get in touch, feel free to reach me 
 - Email: vanjoseluis@gmail.com 
 
 ---
+
 
