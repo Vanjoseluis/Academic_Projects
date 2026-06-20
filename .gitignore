@@ -1,0 +1,30 @@
+# Visual Studio / TwinCAT
+.vs/
+*.suo
+*.user
+*.cache
+*.bak
+
+# TwinCAT build artifacts
+**/_Boot/
+**/_CompileInfo/
+**/_Libraries/
+**/Plc/Port_*.app
+**/Plc/Port_*.*
+*.tpzip
+*.tizip
+*.tszip
+*.tmc
+
+# Temporary / generated
+*.zip
+*.compileinfo
+*.cid
+*.crc
+*.occ
+*.oce
+*.ocm
+*.autostart
+
+# Licenses
+*.tclrs

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="CaracteristicasPieza" Id="{d24ded0e-f8b4-4a84-ab39-14fff338c5e3}">
+    <Declaration><![CDATA[TYPE CaracteristicasPieza:
+STRUCT
+    Claro     : BOOL := FALSE;
+    Metalico  : BOOL := FALSE;
+	Alta : BOOL := FALSE;				//1290 Alta , 1370 baja. Reves: >1685 No hay >2000
+END_STRUCT
+END_TYPE
+
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

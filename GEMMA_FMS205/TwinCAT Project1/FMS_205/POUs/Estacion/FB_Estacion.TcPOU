@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Estacion" Id="{542cb722-335a-4142-84e5-96e398152f08}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Estacion
+// FMS-203 - Estructurado
+VAR CONSTANT
+	
+END_VAR
+VAR_INPUT
+    // Parametros de control de la estacion
+    CicloACiclo: BOOL := 0;
+	PausaEstado: BOOL;
+    ReiniciaEstado: BOOL;   
+	FinCiclo: BOOL := FALSE;
+	PiezaAPieza: BOOL := FALSE;
+	FinPieza: BOOL:= FALSE;
+	Fallo: BOOL := FALSE;
+	FaltaMaterial : BOOL := FALSE;
+
+    // Parametros de control de la tarea
+    UnidadesSolicitadas: UINT := 1;
+    
+	//Variables auxiliares
+	NCiclos : INT := 0;
+	
+    // Parametros de tiempo
+    TpoPinza: TIME := T#1S;
+	TpoRechazador: TIME := T#1S;
+	TpoEmpujadorAvanza: TIME := T#1S;
+    TpoPaleEntrada: TIME := T#1S;
+	TpoPaleSalida : TIME := T#1S;
+	TpoCintaRetenedor : TIME := T#1S;
+	TpoPaleTransferencia : TIME := T#1S;
+	TpoAlimentador: TIME := T#1300MS;
+    TpoMedidor: TIME := T#1S;
+	TpoPreparacion: TIME := T#1S;
+	TpoFinalizacion : TIME := T#2S;
+    
+END_VAR
+
+VAR_OUTPUT
+	  // Parametros de; estado de la estacion
+    CondicionInicial: BOOL;
+    CondicionMarcha: BOOL;
+	PrepararProduccion: BOOL := FALSE;
+	FinalizarProduccion: BOOL := FALSE;
+    CodigoPale: BYTE;  
+    
+    // Parametros de control de la tarea 
+    UnidadesPendientes: UINT := 0;
+    UnidadesRealizadas: UINT :=0;
+	
+	 // Entradas comunes
+    PulsadorEmergencia AT %I*: BOOL;
+    SelectorManual AT %I*: BOOL;
+    PulsadorMarcha AT %I*: BOOL;
+    PulsadorParada AT %I*: BOOL := TRUE; // Contacto normalmente cerrado
+    EstacionConectada AT %I*: BOOL := TRUE;
+    PresenciaPale AT %I*: BOOL;
+    CodigoPaleBit0 AT %I*: BOOL;
+    CodigoPaleBit1 AT %I*: BOOL;
+    CodigoPaleBit2 AT %I*: BOOL;
+
+    // Entradas espeficicas
+    CargadorDetras AT %I*: BOOL;
+	CargadorDelante AT %I*: BOOL;
+	CargadorArriba AT %I*: BOOL;
+	CargadorAbajo AT %I*: BOOL;
+	PlatoEmpujadorDetras AT %I*: BOOL;
+	RechazadorDetras AT %I*: BOOL;
+	RechazadorDelante AT %I*: BOOL;
+	RechazadorArriba AT %I*: BOOL;
+	
+	RechazadorVacio AT %I*: BOOL;
+	DescargadorDetras AT %I*: BOOL;
+	DescargadorDelante AT %I*: BOOL;
+	DescargadorArriba AT %I*: BOOL;
+	DescargadorAbajo AT %I*: BOOL;
+	AlimentadorDelante AT %I*: BOOL := FALSE;
+	DetectorInductivo AT %I*: BOOL;
+	DetectorFotoelectrico AT %I*: BOOL;
+	Codificador AT %I*: UINT;
+END_VAR
+
+VAR
+	ModoAnterior: E_GEMMA; 
+	
+	 // Bloques funcionales
+	CLK: FB_Clock;
+	
+	Director: FB_Director;
+    Coordinador: FB_Coordinador_SFC;
+	
+	Restaurar: FB_EstacionRestaurar_SFC;
+    Vaciar: FB_EstacionVaciar_SFC;
+	AvanzarAlimentador: FB_AvanzarAlimentador_SFC;
+    SituarPale: FB_SituarPale_SFC;
+    CargarPieza: FB_CargarPieza_SFC;
+	EmpujarPlato: FB_EmpujarPlato_SFC;
+	RetrocederPlato : FB_RetrocederPlato_SFC;
+    DescargarPieza: FB_DescargarPieza_SFC;
+    RechazarPieza: FB_RechazarPieza_SFC;
+    TransferirPale: FB_TransferirPale_SFC;
+	Medir: FB_Medir_SFC;
+	
+	// Arrays
+	ListadePiezas: ARRAY[1..TAMANO_LISTA_PIEZAS] OF Pieza; // Array de tamaño 8 piezas 
+	ListaPiezasSolicitadas: ARRAY[1..TAMANO_LISTA_CONDICIONES] OF UINT
+ 	:= [TAMANO_LISTA_CONDICIONES(0)]; 
+	
+    // Salidas comunes
+    DesconectaEstacion AT %Q*: BOOL;
+    LamparaAlarma AT %Q*: BOOL;
+    LamparaMarcha AT %Q*: BOOL;
+	LamparaMaterial AT %Q*: BOOL;
+    CintaActiva AT %Q*: BOOL;
+    CintaInvierte AT %Q*: BOOL;
+    RetenedorBaja AT %Q*: BOOL;
+	
+	AvisadorSonoro AT %Q*: BOOL;
+
+    // Salidas especificas
+    CargadorAvanza AT %Q*: BOOL;
+	CargadorBaja AT %Q*: BOOL; 	
+	CargadorCierra AT %Q*: BOOL;
+	PlatoEmpujadorAvanza AT %Q*: BOOL;
+	PlatoRetenedorAtras AT %Q*: BOOL;
+	RechazadorAvanza AT %Q*: BOOL;
+	RechazadorRetrocede AT %Q*: BOOL;
+	RechazadorBaja AT %Q*: BOOL;
+	
+	RechazadorSucciona AT %Q*: BOOL;
+	DescargadorAvanza AT %Q*: BOOL;
+	DescargadorBaja AT %Q*: BOOL;
+	DescargadorCierra AT %Q*: BOOL;
+	AlimentadorAvanza AT %Q*: BOOL;
+	MedidorBaja AT %Q*: BOOL;
+	SeparadorSube AT %Q*: BOOL;	
+	
+	PlatoEmpujado: BOOL;
+	PiezaRechazada: BOOL;
+END_VAR
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Director(
+	CondicionInicial := CondicionInicial,
+    CondicionMarcha := CondicionMarcha,
+	Emergencia := PulsadorEmergencia,
+    FaltaPreparacion := (UnidadesRealizadas = 0) AND Director.Modo = E_GEMMA.A1,
+    FinTarea := (UnidadesPendientes = 0),
+    FinCiclo := Coordinador.Done,
+	FinPieza := FinPieza,
+    Manual := SelectorManual,
+    Marcha := PulsadorMarcha,
+    ParaCiclo := NOT PulsadorParada,
+    Preparada := Vaciar.Done,
+    Reinicia := ReiniciaEstado,
+	PrepararProduccion := PrepararProduccion,
+    FinalizarProduccion := FinalizarProduccion,
+	Fallo := Fallo
+);
+
+// MODO AUTOMATICO
+IF (Director.Modo <> E_GEMMA.F4) THEN
+    // Bloques funcionales
+    Coordinador(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado, 
+        // OR Director.Modo := E_GEMMA.F3 
+        SFCReset := ReiniciaEstado,
+        Ack := TRUE,
+        Execute :=  (Director.Modo = E_GEMMA.F1),
+        Resume := PulsadorMarcha,
+        StepByStep := CicloaCiclo,
+		FinCiclo := FinCiclo,
+		FinPieza => FinPieza,
+		PiezaAPieza := PiezaAPieza,
+        PaleSituado := SituarPale.Done,
+		AlimentadorAvanzado := AvanzarAlimentador.Done,
+        PiezaCargada := CargarPieza.Done,
+        PlatoEmpujado := EmpujarPlato.Done,
+		PlatoRetrocedido := RetrocederPlato.Done,
+        PiezaDescargada := DescargarPieza.Done,
+        PiezaRechazada := RechazarPieza.Done,
+		PiezaMedida := Medir.Done,
+        PaleTransferido := TransferirPale.Done,
+        CondicionInicial := CondicionInicial,
+        UnidadesSolicitadas => UnidadesSolicitadas,
+		UnidadesRealizadas => UnidadesRealizadas,
+		UnidadesPendientes => UnidadesPendientes,
+		ListadePiezas := ListadePiezas,
+		ListaPiezasSolicitadas := ListaPiezasSolicitadas,
+		Fallo => Fallo,
+		FaltaMaterial := FaltaMaterial
+        );
+        
+    SituarPale(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado,
+        SFCReset := ReiniciaEstado,
+        Ack := NOT Coordinador.SituaPale,
+        Execute := Coordinador.SituaPale,
+        TpoPaleEntrada := TpoPaleEntrada,
+        PresenciaPale := PresenciaPale,
+        CodigoPaleBit0 := CodigoPaleBit0,
+        CodigoPaleBit1 := CodigoPaleBit1,
+        CodigoPaleBit2 := CodigoPaleBit2
+        );
+        
+	 AvanzarAlimentador(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado,
+        SFCReset := ReiniciaEstado,
+        Ack := NOT Coordinador.AvanzaAlimentador,
+        Execute := Coordinador.AvanzaAlimentador,
+		TpoAlimentador :=  TpoAlimentador,
+        AlimentadorDelante := AlimentadorDelante,
+		PulsadorMarcha := PulsadorMarcha,
+		Fallo => Fallo,
+		FaltaMaterial := FaltaMaterial
+        );	
+	
+
+    CargarPieza(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado,
+        SFCReset := ReiniciaEstado,
+        Ack := NOT Coordinador.CargaPieza,
+        Execute := Coordinador.CargaPieza,
+		TpoPinza :=  TpoPinza,
+        CargadorDetras := CargadorDetras,
+		CargadorDelante := CargadorDelante,
+		CargadorArriba := CargadorArriba,
+		CargadorAbajo := CargadorAbajo
+        );
+        
+     EmpujarPlato(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado,
+        SFCReset := ReiniciaEstado,
+        Ack := NOT Coordinador.EmpujaPlato AND NOT Vaciar.EmpujaPlato,
+        Execute := Coordinador.EmpujaPlato OR Vaciar.EmpujaPlato,
+		TpoEmpujadorAvanza := TpoEmpujadorAvanza,
+        );
+	
+	RetrocederPlato(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado,
+        SFCReset := ReiniciaEstado,
+        Ack := NOT Coordinador.RetrocederPlato,
+        Execute := Coordinador.RetrocederPlato,
+		TpoEmpujadorAvanza :=  TpoEmpujadorAvanza,
+        PlatoEmpujadorDetras := PlatoEmpujadorDetras,
+        );
+		
+    
+    DescargarPieza(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado,
+        SFCReset := ReiniciaEstado,
+        Ack := NOT Coordinador.DescargaPieza,
+        Execute := Coordinador.DescargaPieza,
+        TpoPinza :=  TpoPinza,
+        DescargadorDetras := DescargadorDetras,
+        DescargadorDelante := DescargadorDelante,
+        DescargadorArriba := DescargadorArriba,
+        DescargadorAbajo := DescargadorAbajo
+        );
+    
+    RechazarPieza(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado,
+        SFCReset := ReiniciaEstado,
+        Ack := NOT Coordinador.RechazaPieza AND NOT Vaciar.RechazaPieza,
+        Execute := Coordinador.RechazaPieza OR Vaciar.RechazaPieza,
+		TpoRechazador := TpoRechazador,
+        RechazadorDetras := RechazadorDetras,
+        RechazadorDelante := RechazadorDelante,
+        RechazadorArriba := RechazadorArriba,
+		RechazadorVacio := RechazadorVacio,
+		PulsadorMarcha := PulsadorMarcha,
+		Fallo => Fallo
+        );
+		
+	 Medir(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado,
+        SFCReset := ReiniciaEstado,
+        Ack := NOT Coordinador.MedidorMide,
+        Execute := Coordinador.MedidorMide,
+		TpoMedidor := TpoMedidor,
+        Codificador := Codificador,
+        DetectorFotoelectrico := DetectorFotoelectrico,
+        DetectorInductivo := DetectorInductivo,
+		NCiclos := NCiclos,
+		ListadePiezas := ListadePiezas,
+        );
+    
+    TransferirPale(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado,
+        SFCReset := ReiniciaEstado,
+        Ack := NOT Coordinador.TransfierePale,
+        Execute := Coordinador.TransfierePale,
+        TpoCintaRetenedor := TpoCintaRetenedor,
+        TpoPaleSalida := TpoPaleSalida,
+        TpoPaleTransferencia := TpoPaleTransferencia,
+        PresenciaPale := PresenciaPale
+        );
+    Restaurar(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado,
+        SFCReset := ReiniciaEstado,
+        Ack := TRUE,
+        Execute := (Director.Modo = E_GEMMA.A6),
+        CargadorDetras := CargadorDetras,
+        PlatoEmpujadorDetras := PlatoEmpujadorDetras,
+        DescargadorDetras := DescargadorDetras,
+		RechazadorDetras := RechazadorDetras
+        );
+	Vaciar(
+        SFCPause := NOT ReiniciaEstado AND PausaEstado,
+        SFCReset := ReiniciaEstado,
+        Ack := (Director.Modo <> E_GEMMA.F2) AND (Director.Modo <> E_GEMMA.F3),
+        Execute := (Director.Modo = E_GEMMA.F2) OR (Director.Modo = E_GEMMA.F3),
+		TpoPreparacion := TpoPreparacion,
+        TpoMedidor := TpoMedidor,
+		PlatoEmpujado := EmpujarPlato.Done,
+		PiezaRechazada := RechazarPieza.Done,
+		PulsadorMarcha := PulsadorMarcha,
+		Codificador := Codificador
+        );
+		
+    // Acciones
+   AvisadorSonoro := ((Director.Modo = E_GEMMA.F2) AND CLK.Q) 
+        OR (Director.Modo = E_GEMMA.F3)
+		OR (Director.Modo = E_GEMMA.D1)
+		OR (Director.Modo = E_GEMMA.D2);   
+    LamparaAlarma := (Director.Modo = E_GEMMA.D1) 
+        OR ((Director.Modo = E_GEMMA.A6) AND CLK.Q)
+		OR (Director.Modo = E_GEMMA.D2);
+    LamparaMarcha := (Director.Produccion AND NOT Coordinador.Done)
+        OR ((Director.Modo = E_GEMMA.A1) AND CLK.Q);
+    
+
+    CintaActiva := NOT PausaEstado 
+        AND (SituarPale.CintaActiva OR TransferirPale.CintaActiva);
+    RetenedorBaja := TransferirPale.RetenedorBaja;
+	SeparadorSube := TransferirPale.SeparadorSube;
+	AlimentadorAvanza := AvanzarAlimentador.AlimentadorAvanza;
+    CargadorAvanza := CargarPieza.CargadorAvanza; 
+    CargadorBaja := CargarPieza.CargadorBaja;    
+	CargadorCierra := CargarPieza.CargadorCierra;
+	PlatoEmpujadorAvanza := EmpujarPlato.PlatoEmpujadorAvanza;
+	PlatoRetenedorAtras := EmpujarPlato.PlatoRetenedorAtras;
+	DescargadorAvanza := DescargarPieza.DescargadorAvanza; 
+    DescargadorBaja := DescargarPieza.DescargadorBaja;    
+	DescargadorCierra := DescargarPieza.DescargadorCierra;
+    RechazadorAvanza := RechazarPieza.RechazadorAvanza;
+	RechazadorSucciona := RechazarPieza.RechazadorSucciona;
+    RechazadorRetrocede := RechazarPieza.RechazadorRetrocede
+	OR Restaurar.RechazadorRetrocede;
+    RechazadorBaja := RechazarPieza.RechazadorBaja;
+	AlimentadorAvanza := AvanzarAlimentador.AlimentadorAvanza;
+	MedidorBaja := Medir.MedidorBaja OR Vaciar.MedidorBaja;
+	
+   
+END_IF
+
+// Parametros de salida
+CondicionInicial := EstacionConectada 
+    AND CargadorDetras 
+    AND PlatoEmpujadorDetras
+    AND DescargadorDetras
+    AND RechazadorDetras;
+
+CondicionMarcha := (UnidadesSolicitadas > 0);
+NCiclos := Coordinador.NCiclos;
+
+
+IF (Director.Modo <> E_GEMMA.F4) THEN
+    CodigoPale := SituarPale.CodigoPale;
+ELSE 
+    CodigoPale.0 := CodigoPaleBit0;
+    CodigoPale.1 := CodigoPaleBit1;
+    CodigoPale.2 := CodigoPaleBit2;
+END_IF
+
+// ACTULIZACION DE IMAGENES
+ModoAnterior := Director.Modo;]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Estacion">
+      <LineId Id="1809" Count="3" />
+      <LineId Id="3232" Count="0" />
+      <LineId Id="1814" Count="1" />
+      <LineId Id="3516" Count="0" />
+      <LineId Id="1816" Count="4" />
+      <LineId Id="2507" Count="0" />
+      <LineId Id="3230" Count="0" />
+      <LineId Id="2509" Count="0" />
+      <LineId Id="1807" Count="1" />
+      <LineId Id="182" Count="3" />
+      <LineId Id="188" Count="0" />
+      <LineId Id="3231" Count="0" />
+      <LineId Id="189" Count="4" />
+      <LineId Id="2364" Count="0" />
+      <LineId Id="3515" Count="0" />
+      <LineId Id="3512" Count="0" />
+      <LineId Id="194" Count="0" />
+      <LineId Id="365" Count="0" />
+      <LineId Id="195" Count="0" />
+      <LineId Id="555" Count="0" />
+      <LineId Id="2162" Count="0" />
+      <LineId Id="196" Count="1" />
+      <LineId Id="375" Count="0" />
+      <LineId Id="198" Count="2" />
+      <LineId Id="1678" Count="1" />
+      <LineId Id="348" Count="1" />
+      <LineId Id="2510" Count="0" />
+      <LineId Id="3370" Count="0" />
+      <LineId Id="201" Count="13" />
+      <LineId Id="355" Count="6" />
+      <LineId Id="2356" Count="0" />
+      <LineId Id="2511" Count="0" />
+      <LineId Id="3372" Count="0" />
+      <LineId Id="354" Count="0" />
+      <LineId Id="2163" Count="0" />
+      <LineId Id="353" Count="0" />
+      <LineId Id="215" Count="4" />
+      <LineId Id="308" Count="0" />
+      <LineId Id="221" Count="0" />
+      <LineId Id="2180" Count="2" />
+      <LineId Id="224" Count="0" />
+      <LineId Id="543" Count="0" />
+      <LineId Id="545" Count="5" />
+      <LineId Id="544" Count="0" />
+      <LineId Id="2194" Count="0" />
+      <LineId Id="2203" Count="0" />
+      <LineId Id="2195" Count="5" />
+      <LineId Id="2202" Count="0" />
+      <LineId Id="2184" Count="0" />
+      <LineId Id="225" Count="5" />
+      <LineId Id="232" Count="4" />
+      <LineId Id="242" Count="6" />
+      <LineId Id="311" Count="0" />
+      <LineId Id="249" Count="2" />
+      <LineId Id="948" Count="0" />
+      <LineId Id="2501" Count="0" />
+      <LineId Id="2666" Count="0" />
+      <LineId Id="376" Count="0" />
+      <LineId Id="387" Count="0" />
+      <LineId Id="389" Count="8" />
+      <LineId Id="402" Count="0" />
+      <LineId Id="408" Count="0" />
+      <LineId Id="388" Count="0" />
+      <LineId Id="254" Count="10" />
+      <LineId Id="1833" Count="8" />
+      <LineId Id="265" Count="0" />
+      <LineId Id="1843" Count="4" />
+      <LineId Id="2004" Count="0" />
+      <LineId Id="2951" Count="0" />
+      <LineId Id="2502" Count="1" />
+      <LineId Id="2505" Count="0" />
+      <LineId Id="2809" Count="0" />
+      <LineId Id="1848" Count="0" />
+      <LineId Id="1832" Count="0" />
+      <LineId Id="266" Count="0" />
+      <LineId Id="1856" Count="1" />
+      <LineId Id="2139" Count="1" />
+      <LineId Id="1858" Count="1" />
+      <LineId Id="2138" Count="0" />
+      <LineId Id="1860" Count="1" />
+      <LineId Id="270" Count="3" />
+      <LineId Id="275" Count="0" />
+      <LineId Id="1685" Count="0" />
+      <LineId Id="368" Count="0" />
+      <LineId Id="276" Count="0" />
+      <LineId Id="279" Count="0" />
+      <LineId Id="313" Count="0" />
+      <LineId Id="370" Count="1" />
+      <LineId Id="315" Count="1" />
+      <LineId Id="314" Count="0" />
+      <LineId Id="280" Count="0" />
+      <LineId Id="689" Count="0" />
+      <LineId Id="281" Count="0" />
+      <LineId Id="1870" Count="0" />
+      <LineId Id="282" Count="0" />
+      <LineId Id="366" Count="0" />
+      <LineId Id="399" Count="1" />
+      <LineId Id="287" Count="3" />
+      <LineId Id="317" Count="5" />
+      <LineId Id="298" Count="0" />
+      <LineId Id="556" Count="0" />
+      <LineId Id="2355" Count="0" />
+      <LineId Id="1862" Count="6" />
+      <LineId Id="305" Count="1" />
+      <LineId Id="1869" Count="0" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

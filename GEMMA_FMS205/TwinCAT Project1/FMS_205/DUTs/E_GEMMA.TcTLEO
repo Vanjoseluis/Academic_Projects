@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <EnumerationTextList Name="E_GEMMA" Id="{00467c1d-a9d0-478a-9738-af8594f9212a}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_GEMMA :
+(
+    // Modos de la Guia de Estudio de los Modos de Marcha y Parada
+    // Modes du Guide d'Etude des Modes de Marche et d'Arrêt
+    // Modes of Study Guide of the Modes of Operating and Stopping
+
+    // Procedimientos de parada [Les procédures d'arrets - Stop procedure
+    A1, //  0: Parada en el estado inicial 
+        //  0: Arrêt dans etat initial
+        //  0: Stopped in the initial state
+    A2, //  1: Parada solicitada a final de ciclo 
+        //  1: Arret demandé en fin de cycle
+        //  1: Requested end cycle stop
+    A3, //  2: Parada solicitada en un estado determinado 
+        //  2: Arret demande dans etat determine
+        //  2: Requested particular state stop
+    A4, //  3: Parada obtenida 
+        //  3: Arret obtenu 
+        //  3: Obteined stop
+    A5, //  4: Preparacion para la recuperacion del fallo 
+        //  4: Preparation pour remise en route apres defaillance
+        //  4: Preparation for the recovery of the failure
+    A6, //  5: Situando la PO en el estado inicial 
+        //  5: Mise PO dans état initial 
+        //  5: Set the PO in initial state
+    A7, //  6: Situando la PO en un estado determinado 
+        //  6: Mise PO dans état déterminé 
+        //  6: Set the PO in a certain state
+
+    // Procedimientos de funcionamiento 
+    // Les procédures de fonctionnement 
+    // Operating procedures
+    F1, //  7: Produccion normal 
+        //  7: Production normale 
+        //  7: Normal operation
+    F2, //  8: Secuencia de preparacion 
+        //  8: Marche de preparation 
+        //  8: Preparation sequence
+    F3, //  9: Secuencia de finalizacion 
+        //  9: Marche de cloture
+        //  9: Ending sequence
+    F4, // 10: Verificacion en desorden 
+        // 10: Marche de verification dans le desordre 
+        // 10: Verification with no order
+    F5, // 11: Verificacion en orden 
+        // 11: Marche de verification dans l'ordre 
+        // 11: Verification whit order
+    F6, // 12: Secuencia de prueba 
+        // 12: Marche de test 
+        // 12:Test sequence
+
+    // Procedimientos de fallo 
+    // es procédures en défaillances
+    // Failure procedures
+    D1, // 13: Parada de emergencia 
+        // 13: Arret d'urgence 
+        // 13: Emergency stop
+    D2, // 14: Diagnostico y/o tratamiento de los fallos 
+        // 14: Diagnostic et/ou traitement de la défaillance 
+        // 14: Diagnosis and/or treatment of failures
+    D3  // 15: Produccion a pesar de los fallos 
+        // 15: Production tout de même 
+        // 15: Production despite the failures
+);
+END_TYPE
+]]></Declaration>
+    <XmlArchive>
+      <Data>
+        <o xml:space="preserve" t="TextListEnumerationTextListObject">
+          <l n="TextList" t="ArrayList" cet="TextListRow">
+            <o>
+              <v n="TextID">"A1"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"A2"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"A3"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"A4"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"A5"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"A6"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"A7"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"F1"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"F2"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"F3"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"F4"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"F5"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"F6"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"D1"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"D2"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"D3"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">""</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+          </l>
+          <l n="Languages" t="ArrayList" />
+          <v n="GuidInit">{b995696e-e151-42b8-9357-397e262cead7}</v>
+          <v n="GuidReInit">{811010ac-abe2-40c8-8c04-ad5e181dfc5b}</v>
+          <v n="GuidExitX">{193d638a-d9cb-44e8-96af-04df138fd93d}</v>
+        </o>
+      </Data>
+      <TypeList>
+        <Type n="ArrayList">System.Collections.ArrayList</Type>
+        <Type n="Guid">System.Guid</Type>
+        <Type n="String">System.String</Type>
+        <Type n="TextListEnumerationTextListObject">{4b60233c-f940-4beb-b331-82133b520151}</Type>
+        <Type n="TextListRow">{53da1be7-ad25-47c3-b0e8-e26286dad2e0}</Type>
+      </TypeList>
+    </XmlArchive>
+  </EnumerationTextList>
+</TcPlcObject>

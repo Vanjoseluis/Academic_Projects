@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Director" Id="{e2c85cd2-e051-4bde-b727-6d3fed60329a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Director
+// FMS-203 - GEMMA
+
+VAR_INPUT
+    CondicionInicial: BOOL;
+    CondicionMarcha: BOOL; 
+    Emergencia: BOOL;
+    FinTarea: BOOL;
+    FinCiclo: BOOL;
+	FinPieza: BOOL;
+    Manual: BOOL;
+    Marcha: BOOL;
+    ParaCiclo: BOOL;
+    Preparada: BOOL;
+    Reinicia: BOOL;
+	Fallo: BOOL;
+	PrepararProduccion: BOOL;
+    FinalizarProduccion: BOOL;
+    FaltaPreparacion: BOOL;
+END_VAR
+VAR_OUTPUT
+    Modo: E_GEMMA := E_GEMMA.A6;
+
+    Defecto: BOOL; // Procedimientos de defecto
+    Funcionamiento: BOOL; // Procedimientos de funcionamiento
+    Parada: BOOL; // Procedimientos de parada
+    Produccion: BOOL; // Procedimientos que proporcionan valor añadido
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// FUNCION DE ESTADO
+IF Emergencia THEN
+    Modo := E_GEMMA.D1;
+ELSIF Reinicia THEN
+    Modo := E_GEMMA.A6;
+ELSE
+    CASE Modo OF
+        // Procedimientos de parada
+        E_GEMMA.A1: // Parada en el estado inicial
+            IF NOT CondicionInicial THEN
+                Modo := E_GEMMA.A6;
+            ELSIF CondicionInicial AND CondicionMarcha AND Marcha THEN
+                IF FaltaPreparacion THEN 
+                    Modo := E_GEMMA.F2;
+                ELSE   
+                    Modo := E_GEMMA.F1;
+                END_IF
+            ELSIF Manual THEN
+                Modo := E_GEMMA.F4;
+            END_IF
+        E_GEMMA.A2: // Parada solicitada a final de ciclo
+           IF Marcha THEN 
+               Modo := E_GEMMA.F1;
+		   END_IF
+        E_GEMMA.A3: // Parada solicitada en un estado determinado 
+       		IF Marcha THEN 
+               Modo := E_GEMMA.F1;
+		   END_IF   
+        E_GEMMA.A4: // Parada obtenida 
+            ;
+        E_GEMMA.A5: // Preparando de reanudacion tras el fallo 
+            ;
+        E_GEMMA.A6: // Situando el sistema en el estado inicial 
+            IF CondicionInicial THEN
+                Modo := E_GEMMA.A1;
+            ELSIF Manual THEN
+                Modo := E_GEMMA.F4;
+            END_IF
+
+        // Procedimientos de funcionamiento 
+        E_GEMMA.F1: // Produccion normal 
+            IF FinTarea THEN
+               Modo := E_GEMMA.A6;
+            ELSIF FinCiclo THEN
+				Modo := E_GEMMA.F3;
+			ELSIF FinPieza THEN
+				Modo := E_GEMMA.A2;
+			ELSIF ParaCiclo THEN
+               Modo := E_GEMMA.A3;
+			ELSIF Fallo THEN
+				Modo := E_GEMMA.D2;
+			END_IF
+			
+        E_GEMMA.F2: // Secuencia de preparacion 
+            IF Preparada AND NOT Manual THEN
+                Modo := E_GEMMA.F1;
+            ELSIF Preparada AND Manual THEN
+                Modo := E_GEMMA.F4;
+			END_IF
+        E_GEMMA.F3: // Secuencia de finalizacion 
+           IF Preparada AND NOT Manual THEN
+                Modo := E_GEMMA.A6;
+            ELSIF Preparada AND Manual THEN
+                Modo := E_GEMMA.F4;
+			END_IF
+        E_GEMMA.F4: // Verificacion sin orden 
+            IF NOT Manual THEN
+                Modo := E_GEMMA.A6;
+            ELSIF (CondicionInicial) AND PrepararProduccion THEN
+                Modo := E_GEMMA.F2;
+            ELSIF (CondicionInicial) AND FinalizarProduccion THEN
+                Modo := E_GEMMA.F3;
+            END_IF
+        E_GEMMA.F5: // Verificacion en orden 
+            ;
+
+        // Procedimientos de defecto 
+        E_GEMMA.D1: // Parada de emergencia 
+            IF NOT Emergencia THEN
+                Modo := E_GEMMA.A6;
+            END_IF
+        E_GEMMA.D2: // Diagnostico/tratamiento de los fallos 
+        IF Marcha THEN
+			Modo := E_GEMMA.F1;
+		END_IF    
+			
+    END_CASE
+END_IF
+
+// PARAMETROS DE SALIDA 
+Defecto := (Modo >= E_GEMMA.D1) AND (Modo <= E_GEMMA.D3);
+Funcionamiento:= (Modo >= E_GEMMA.F1);
+Parada := (Modo >= E_GEMMA.A1);
+Produccion := (Modo = E_GEMMA.A2) 
+    OR (Modo = E_GEMMA.A3) 
+    OR (Modo = E_GEMMA.F1) 
+    OR (Modo = E_GEMMA.F2) 
+    OR (Modo = E_GEMMA.F3) 
+    OR (Modo = E_GEMMA.F5)
+    OR (Modo = E_GEMMA.F6) 
+    OR (Modo = E_GEMMA.D3); 
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Director">
+      <LineId Id="3" Count="10" />
+      <LineId Id="273" Count="1" />
+      <LineId Id="291" Count="0" />
+      <LineId Id="290" Count="0" />
+      <LineId Id="289" Count="0" />
+      <LineId Id="292" Count="0" />
+      <LineId Id="14" Count="1" />
+      <LineId Id="18" Count="1" />
+      <LineId Id="320" Count="1" />
+      <LineId Id="283" Count="0" />
+      <LineId Id="23" Count="0" />
+      <LineId Id="353" Count="1" />
+      <LineId Id="244" Count="0" />
+      <LineId Id="25" Count="9" />
+      <LineId Id="37" Count="3" />
+      <LineId Id="279" Count="0" />
+      <LineId Id="44" Count="0" />
+      <LineId Id="186" Count="0" />
+      <LineId Id="350" Count="1" />
+      <LineId Id="355" Count="1" />
+      <LineId Id="112" Count="0" />
+      <LineId Id="115" Count="1" />
+      <LineId Id="113" Count="0" />
+      <LineId Id="45" Count="3" />
+      <LineId Id="358" Count="0" />
+      <LineId Id="357" Count="0" />
+      <LineId Id="49" Count="0" />
+      <LineId Id="359" Count="3" />
+      <LineId Id="52" Count="3" />
+      <LineId Id="285" Count="2" />
+      <LineId Id="284" Count="0" />
+      <LineId Id="56" Count="2" />
+      <LineId Id="61" Count="6" />
+      <LineId Id="119" Count="0" />
+      <LineId Id="158" Count="0" />
+      <LineId Id="157" Count="0" />
+      <LineId Id="117" Count="0" />
+      <LineId Id="71" Count="15" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

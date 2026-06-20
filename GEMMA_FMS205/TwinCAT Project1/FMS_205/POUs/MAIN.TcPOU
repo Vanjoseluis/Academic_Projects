@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{39199d75-8bc2-44aa-90b7-51b213df73f4}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+//Ingenieria Electronica Robotica y Mecatronica (GIERM)
+//Autmatizacion Industrial
+//FMS205 
+//GEMMA
+//Grupo 03
+//Paula Chova Garcia
+//Jose Luis Perez Martin
+//Tobias Garibaldi Thwaites Rayner
+
+
+VAR
+    Estacion: FB_Estacion;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Estacion();]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

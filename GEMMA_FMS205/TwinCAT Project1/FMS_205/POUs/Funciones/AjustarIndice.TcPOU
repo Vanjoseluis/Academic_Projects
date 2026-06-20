@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="AjustarIndice" Id="{38e6a205-0c79-4781-b76a-9d4083be1a45}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION AjustarIndice : INT
+VAR_INPUT
+    ValorBase: INT;
+END_VAR					//Cambiar por un Property?
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF ValorBase < 1 THEN
+    AjustarIndice := ValorBase + 8;
+ELSE
+    AjustarIndice := ValorBase;
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="AjustarIndice">
+      <LineId Id="16" Count="3" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

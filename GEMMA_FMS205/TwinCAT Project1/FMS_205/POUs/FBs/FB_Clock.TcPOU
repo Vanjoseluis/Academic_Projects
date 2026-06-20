@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="FB_Clock" Id="{67736473-c189-4218-99fe-32fc28bf04df}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Clock
+(*
+Square wave oscillator
+
+Copyright (c) 2009-2017 victortorreslopez
+
+GNU General Public License
+
+Version history
+2.1, 2017/03/15, VTL: style review (PLCopen Coding Guidelines)
+2.0, 2014/12/29, VTL: complete review
+1.0, 2009/11/06, VTL: first release
+0.0, 2009/11/06, VTL: alfa release
+*)
+VAR_INPUT
+  EN: BOOL := TRUE;	(* ENabled *)
+  PT: TIME := T#500ms; (* Semicycle time *)
+END_VAR
+VAR_OUTPUT
+  ET: TIME; (* Elapsed time *)
+  Q: BOOL; (* Square wave *)
+END_VAR
+VAR
+  Timer: TON; (* Auto-pilot timer *)
+END_VAR
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(* OUTPUT FUNCTION *)
+IF Timer.Q THEN
+  Q := NOT Q;
+END_IF
+
+(* FUNCTION BLOCKS *)
+Timer(IN := EN AND NOT Timer.Q, PT := PT, ET => ET);]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Clock">
+      <LineId Id="34" Count="5" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
