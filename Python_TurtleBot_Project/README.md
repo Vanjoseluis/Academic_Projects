@@ -19,10 +19,16 @@ This project implements a ROS 2 node written in Python to control a mobile robot
   - `geometry_msgs`
   - `nav_msgs`
 
-## 🎥 Audiovisual content
-* I recommend you to visit [my video](https://youtu.be/6Ff-6WbN0mU?si=IfbdimruFISSB1Te) showing the Real Robot on live and some code.
+---
 
+## 🎥 Audiovisual content
+### Real Robot Demo
+* I recommend you to visit [my video](https://youtu.be/6Ff-6WbN0mU?si=IfbdimruFISSB1Te) showing the Real Robot on live and some code.
+[![Obstacle Avoider Demo](https://img.youtube.com/vi/6Ff-6WbN0mU/0.jpg)](https://youtu.be/6Ff-6WbN0mU)
+
+## 🎤 Project Presentation
 * Also my presentation of the project on *The Construct* [**YouTube**](https://www.youtube.com/live/sTN2b3UEYlE?si=bRWYzU6NnODBstbc) channel to see how it works
+[![The Construct Presentation](https://img.youtube.com/vi/sTN2b3UEYlE/0.jpg)](https://www.youtube.com/live/sTN2b3UEYlE)
 
 #
 This project is licensed under the MIT License. See the LICENSE file for details.
