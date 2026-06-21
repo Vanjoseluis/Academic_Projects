@@ -19,9 +19,13 @@ Designed for simplicity and education, this is a lightweight alternative to Pyth
   - `ros2 param` CLI interface
 - `bc` installed (for float comparison in Bash)
 
-## 🎥 Audiovisual content
+---
 
+## 🎥 Audiovisual content
+### Project Presentation (The Construct)
 * I recommend you to visit my presentation of the project on *The Construct* [**YouTube**](https://www.youtube.com/live/my1uggnVLkg?si=Qn4Eo9icft3ClaFf) channel to see how it works
+[![Project Presentation](https://img.youtube.com/vi/my1uggnVLkg/0.jpg)](https://www.youtube.com/live/my1uggnVLkg)
+
 
 #
 This project is licensed under the MIT License. See the LICENSE file for details.
