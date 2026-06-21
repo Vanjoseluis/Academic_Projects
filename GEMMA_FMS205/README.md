@@ -3,6 +3,10 @@ This repository contains the full implementation of the FMS‑205 automated stat
 
 The project includes a modular PLC architecture, task coordination, pneumatic actuation control, sensor integration, and a complete HMI developed with TwinCAT Visualizations.
 
+## 🖼️ Machine Overview
+
+![FMS-205 Machine](docs/machine.jpg)
+
 ---
 
 ## 📌 Project Overview
@@ -136,6 +140,9 @@ A detailed technical report is available in the docs/ folder, including:
 - SFC/GRAFCET charts
 - HMI design
 
+## Full technical report (PDF):  
+  [FMS205_report.pdf](docs/FMS205_report.pdf)
+  
 ---
 
 ## 👤 Author
