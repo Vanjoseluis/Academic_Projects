@@ -64,6 +64,7 @@ Button 0 on the Nexys3 enables result visualization only while pressed, reflecti
 - Shared testbench for all Cuenta4_votos versions.
 - Chronogram testbench for Reg_Vot (state evolution).
 - Exhaustive testbenches for arithmetic modules.
+![Cronogram](Diagrams/VHDL_CASE.png)
 
 ## Known Issues & Notes
 ### ISE Static File References
