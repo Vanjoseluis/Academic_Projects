@@ -145,7 +145,11 @@ A detailed technical report is available in the docs/ folder, including:
   
 ---
 
-## 👤 Author
-### José Luis Pérez Martín  
-B.Sc. in Electronic, Robotics and Mechatronics Engineering
-University of Málaga
+## Credits
+- Author: José Luis Pérez Martín
+- Course: Industrial Automation
+- Instructors: Francisco Ángel Moreno Dueñas, Víctor Eugenio Torres López
+- University of Málaga — Escuela de Ingenierías Industriales
+
+
+
