@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Modulo_general">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2026-4-5T17:19:29</timestamp>
+    <pin polarity="Input" x="0" y="-416" name="M(7:0)" />
+    <pin polarity="Output" x="384" y="-352" name="NA(1:0)" />
+    <pin polarity="Output" x="384" y="-32" name="SevenSeg_C(7:0)" />
+    <pin polarity="Output" x="384" y="-96" name="SevenSeg_F(7:0)" />
+    <pin polarity="Output" x="384" y="-160" name="SevenSeg_VC(7:0)" />
+    <pin polarity="Output" x="384" y="-224" name="SevenSeg_VF(7:0)" />
+    <pin polarity="Output" x="384" y="-288" name="VC(2:0)" />
+    <pin polarity="Output" x="384" y="-416" name="VF(2:0)" />
+    <pin polarity="Input" x="0" y="-352" name="VVal" />
+    <graph>
+        <rect width="256" x="64" y="-448" height="448" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-456" type="symbol" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin M(7:0)" />
+        <rect width="64" x="0" y="-428" height="24" />
+        <line x2="384" y1="-352" y2="-352" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-352" type="pin NA(1:0)" />
+        <rect width="64" x="320" y="-364" height="24" />
+        <line x2="384" y1="-32" y2="-32" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-32" type="pin SevenSeg_C(7:0)" />
+        <rect width="64" x="320" y="-44" height="24" />
+        <line x2="384" y1="-96" y2="-96" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-96" type="pin SevenSeg_F(7:0)" />
+        <rect width="64" x="320" y="-108" height="24" />
+        <line x2="384" y1="-160" y2="-160" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-160" type="pin SevenSeg_VC(7:0)" />
+        <rect width="64" x="320" y="-172" height="24" />
+        <line x2="384" y1="-224" y2="-224" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-224" type="pin SevenSeg_VF(7:0)" />
+        <rect width="64" x="320" y="-236" height="24" />
+        <line x2="384" y1="-288" y2="-288" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-288" type="pin VC(2:0)" />
+        <rect width="64" x="320" y="-300" height="24" />
+        <line x2="384" y1="-416" y2="-416" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-416" type="pin VF(2:0)" />
+        <rect width="64" x="320" y="-428" height="24" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin VVal" />
+    </graph>
+</symbol>

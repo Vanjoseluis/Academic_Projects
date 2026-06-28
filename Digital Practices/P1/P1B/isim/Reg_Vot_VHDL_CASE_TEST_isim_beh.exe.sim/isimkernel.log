@@ -1,0 +1,30 @@
+Command line:
+   Reg_Vot_VHDL_CASE_TEST_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50289
+
+Thu May 14 13:32:22 2026
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.15 Meg
+
+ Total Signals          : 18
+ Total Nets             : 12
+ Total Signal Drivers   : 10
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 6
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 373
+Total Line Count : 45
+Total Line Count : 45
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 4992.87 Meg
+
+Thu May 14 13:34:19 2026
+

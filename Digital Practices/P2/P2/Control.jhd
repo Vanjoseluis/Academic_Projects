@@ -1,0 +1,3 @@
+MODULE Control
+	SUBMODULE Control_Combinacional
+		INSTANCE XLXI_8

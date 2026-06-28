@@ -1,0 +1,1212 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Sumador.vhf" into library work
+Parsing entity <Sumador>.
+Parsing architecture <BEHAVIORAL> of entity <sumador>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Sumador_Completo.vhf" into library work
+Parsing entity <Sumador_MUSER_Sumador_Completo>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_muser_sumador_completo>.
+Parsing entity <Sumador_Completo>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_completo>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Complemento_a2.vhf" into library work
+Parsing entity <INV4_HXILINX_Complemento_a2>.
+Parsing architecture <INV4_HXILINX_Complemento_a2_V> of entity <inv4_hxilinx_complemento_a2>.
+Parsing entity <Sumador_MUSER_Complemento_a2>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_muser_complemento_a2>.
+Parsing entity <Sumador_Completo_MUSER_Complemento_a2>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_completo_muser_complemento_a2>.
+Parsing entity <Complemento_a2>.
+Parsing architecture <BEHAVIORAL> of entity <complemento_a2>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Restador.vhf" into library work
+Parsing entity <INV4_HXILINX_Restador>.
+Parsing architecture <INV4_HXILINX_Restador_V> of entity <inv4_hxilinx_restador>.
+Parsing entity <Sumador_MUSER_Restador>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_muser_restador>.
+Parsing entity <Sumador_Completo_MUSER_Restador>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_completo_muser_restador>.
+Parsing entity <Complemento_a2_MUSER_Restador>.
+Parsing architecture <BEHAVIORAL> of entity <complemento_a2_muser_restador>.
+Parsing entity <Restador>.
+Parsing architecture <BEHAVIORAL> of entity <restador>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Cuenta_4votos.vhd" into library work
+Parsing entity <Cuenta_4votosVHDL>.
+Parsing architecture <Behavioral> of entity <cuenta_4votosvhdl>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Const_F.vhf" into library work
+Parsing entity <Const_F>.
+Parsing architecture <BEHAVIORAL> of entity <const_f>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Const_8.vhf" into library work
+Parsing entity <Const_8>.
+Parsing architecture <BEHAVIORAL> of entity <const_8>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Visualiza_Cuenta.vhf" into library work
+Parsing entity <Const_C_MUSER_Visualiza_Cuenta>.
+Parsing architecture <BEHAVIORAL> of entity <const_c_muser_visualiza_cuenta>.
+Parsing entity <Const_F_MUSER_Visualiza_Cuenta>.
+Parsing architecture <BEHAVIORAL> of entity <const_f_muser_visualiza_cuenta>.
+Parsing entity <Hexadecimal_7Segmentos_MUSER_Visualiza_Cuenta>.
+Parsing architecture <BEHAVIORAL> of entity <hexadecimal_7segmentos_muser_visualiza_cuenta>.
+Parsing entity <Visualiza_Cuenta>.
+Parsing architecture <BEHAVIORAL> of entity <visualiza_cuenta>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Resultado_de_votacion.vhf" into library work
+Parsing entity <Resultado_de_votacion>.
+Parsing architecture <BEHAVIORAL> of entity <resultado_de_votacion>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Cuenta_Votos_COMPLETO.vhf" into library work
+Parsing entity <INV4_HXILINX_Cuenta_Votos_COMPLETO>.
+Parsing architecture <INV4_HXILINX_Cuenta_Votos_COMPLETO_V> of entity <inv4_hxilinx_cuenta_votos_completo>.
+Parsing entity <Const_8_MUSER_Cuenta_Votos_COMPLETO>.
+Parsing architecture <BEHAVIORAL> of entity <const_8_muser_cuenta_votos_completo>.
+Parsing entity <Sumador_MUSER_Cuenta_Votos_COMPLETO>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_muser_cuenta_votos_completo>.
+Parsing entity <Sumador_Completo_MUSER_Cuenta_Votos_COMPLETO>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_completo_muser_cuenta_votos_completo>.
+Parsing entity <Complemento_a2_MUSER_Cuenta_Votos_COMPLETO>.
+Parsing architecture <BEHAVIORAL> of entity <complemento_a2_muser_cuenta_votos_completo>.
+Parsing entity <Restador_MUSER_Cuenta_Votos_COMPLETO>.
+Parsing architecture <BEHAVIORAL> of entity <restador_muser_cuenta_votos_completo>.
+Parsing entity <Cuenta_Votos_COMPLETO>.
+Parsing architecture <BEHAVIORAL> of entity <cuenta_votos_completo>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Modulo_general.vhf" into library work
+Parsing entity <INV4_HXILINX_Modulo_general>.
+Parsing architecture <INV4_HXILINX_Modulo_general_V> of entity <inv4_hxilinx_modulo_general>.
+Parsing entity <Resultado_de_votacion_MUSER_Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <resultado_de_votacion_muser_modulo_general>.
+Parsing entity <Const_C_MUSER_Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <const_c_muser_modulo_general>.
+Parsing entity <Const_F_MUSER_Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <const_f_muser_modulo_general>.
+Parsing entity <Hexadecimal_7Segmentos_MUSER_Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <hexadecimal_7segmentos_muser_modulo_general>.
+Parsing entity <Visualiza_Cuenta_MUSER_Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <visualiza_cuenta_muser_modulo_general>.
+Parsing entity <Const_8_MUSER_Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <const_8_muser_modulo_general>.
+Parsing entity <Sumador_MUSER_Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_muser_modulo_general>.
+Parsing entity <Sumador_Completo_MUSER_Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_completo_muser_modulo_general>.
+Parsing entity <Complemento_a2_MUSER_Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <complemento_a2_muser_modulo_general>.
+Parsing entity <Restador_MUSER_Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <restador_muser_modulo_general>.
+Parsing entity <Cuenta_Votos_COMPLETO_MUSER_Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <cuenta_votos_completo_muser_modulo_general>.
+Parsing entity <Modulo_general>.
+Parsing architecture <BEHAVIORAL> of entity <modulo_general>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Remote_Lab.vhd" into library work
+Parsing entity <Remote_Lab>.
+Parsing architecture <Behavioral> of entity <remote_lab>.
+Parsing entity <Modulo>.
+Parsing architecture <Behavioral> of entity <modulo>.
+Parsing entity <Division>.
+Parsing architecture <Behavioral> of entity <division>.
+Parsing entity <Genera_Tono>.
+Parsing architecture <behavioral> of entity <genera_tono>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\MyDesign.vhf" into library work
+Parsing entity <INV4_HXILINX_MyDesign>.
+Parsing architecture <INV4_HXILINX_MyDesign_V> of entity <inv4_hxilinx_mydesign>.
+Parsing entity <Resultado_de_votacion_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <resultado_de_votacion_muser_mydesign>.
+Parsing entity <Const_C_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <const_c_muser_mydesign>.
+Parsing entity <Const_F_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <const_f_muser_mydesign>.
+Parsing entity <Hexadecimal_7Segmentos_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <hexadecimal_7segmentos_muser_mydesign>.
+Parsing entity <Visualiza_Cuenta_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <visualiza_cuenta_muser_mydesign>.
+Parsing entity <Const_8_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <const_8_muser_mydesign>.
+Parsing entity <Sumador_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_muser_mydesign>.
+Parsing entity <Sumador_Completo_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_completo_muser_mydesign>.
+Parsing entity <Complemento_a2_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <complemento_a2_muser_mydesign>.
+Parsing entity <Restador_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <restador_muser_mydesign>.
+Parsing entity <Cuenta_Votos_COMPLETO_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <cuenta_votos_completo_muser_mydesign>.
+Parsing entity <Modulo_general_MUSER_MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <modulo_general_muser_mydesign>.
+Parsing entity <MyDesign>.
+Parsing architecture <BEHAVIORAL> of entity <mydesign>.
+Parsing VHDL file "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf" into library work
+Parsing entity <INV4_HXILINX_top>.
+Parsing architecture <INV4_HXILINX_top_V> of entity <inv4_hxilinx_top>.
+Parsing entity <Resultado_de_votacion_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <resultado_de_votacion_muser_top>.
+Parsing entity <Const_C_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <const_c_muser_top>.
+Parsing entity <Const_F_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <const_f_muser_top>.
+Parsing entity <Hexadecimal_7Segmentos_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <hexadecimal_7segmentos_muser_top>.
+Parsing entity <Visualiza_Cuenta_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <visualiza_cuenta_muser_top>.
+Parsing entity <Const_8_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <const_8_muser_top>.
+Parsing entity <Sumador_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_muser_top>.
+Parsing entity <Sumador_Completo_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <sumador_completo_muser_top>.
+Parsing entity <Complemento_a2_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <complemento_a2_muser_top>.
+Parsing entity <Restador_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <restador_muser_top>.
+Parsing entity <Cuenta_Votos_COMPLETO_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <cuenta_votos_completo_muser_top>.
+Parsing entity <Modulo_general_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <modulo_general_muser_top>.
+Parsing entity <MyDesign_MUSER_top>.
+Parsing architecture <BEHAVIORAL> of entity <mydesign_muser_top>.
+Parsing entity <top>.
+Parsing architecture <BEHAVIORAL> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <MyDesign_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Modulo_general_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Cuenta_Votos_COMPLETO_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Sumador_Completo_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Sumador_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Restador_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Complemento_a2_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <INV4_HXILINX_top> (architecture <INV4_HXILINX_top_V>) from library <work>.
+
+Elaborating entity <Const_8_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Cuenta_4votosVHDL> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Cuenta_4votos.vhd" Line 102. Case statement is complete. others clause is never selected
+
+Elaborating entity <Visualiza_Cuenta_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Hexadecimal_7Segmentos_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Const_F_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Const_C_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Resultado_de_votacion_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Remote_Lab> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Modulo> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Division> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Genera_Tono> (architecture <behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+INFO:Xst:3210 - "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf" line 1502: Output port <RxInternal> of the instance <XLXI_255> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <top> synthesized.
+
+Synthesizing Unit <MyDesign_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+WARNING:Xst:647 - Input <btn<4:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Ck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf" line 1391: Output port <SVC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf" line 1391: Output port <SVF> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <MyDesign_MUSER_top> synthesized.
+
+Synthesizing Unit <Modulo_general_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+    Summary:
+	no macro.
+Unit <Modulo_general_MUSER_top> synthesized.
+
+Synthesizing Unit <Cuenta_Votos_COMPLETO_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+INFO:Xst:3210 - "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf" line 1238: Output port <C3> of the instance <XLXI_43> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf" line 1238: Output port <C4> of the instance <XLXI_43> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf" line 1254: Output port <S4> of the instance <XLXI_44> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Cuenta_Votos_COMPLETO_MUSER_top> synthesized.
+
+Synthesizing Unit <Sumador_Completo_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+    Summary:
+	no macro.
+Unit <Sumador_Completo_MUSER_top> synthesized.
+
+Synthesizing Unit <Sumador_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+    Summary:
+	no macro.
+Unit <Sumador_MUSER_top> synthesized.
+
+Synthesizing Unit <Restador_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+INFO:Xst:3210 - "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf" line 1124: Output port <S4> of the instance <XLXI_17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf" line 1134: Output port <C3> of the instance <XLXI_18> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Restador_MUSER_top> synthesized.
+
+Synthesizing Unit <Complemento_a2_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+    Set property "HU_SET = XLXI_6_1" for instance <XLXI_6>.
+INFO:Xst:3210 - "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf" line 1047: Output port <C3> of the instance <XLXI_19> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Complemento_a2_MUSER_top> synthesized.
+
+Synthesizing Unit <INV4_HXILINX_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+    Summary:
+	no macro.
+Unit <INV4_HXILINX_top> synthesized.
+
+Synthesizing Unit <Const_8_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+    Summary:
+	no macro.
+Unit <Const_8_MUSER_top> synthesized.
+
+Synthesizing Unit <Cuenta_4votosVHDL>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Cuenta_4votos.vhd".
+    Found 16x3-bit Read Only RAM for signal <S>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Cuenta_4votosVHDL> synthesized.
+
+Synthesizing Unit <Visualiza_Cuenta_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+    Summary:
+	no macro.
+Unit <Visualiza_Cuenta_MUSER_top> synthesized.
+
+Synthesizing Unit <Hexadecimal_7Segmentos_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+    Summary:
+	no macro.
+Unit <Hexadecimal_7Segmentos_MUSER_top> synthesized.
+
+Synthesizing Unit <Const_F_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+    Summary:
+	no macro.
+Unit <Const_F_MUSER_top> synthesized.
+
+Synthesizing Unit <Const_C_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+    Summary:
+	no macro.
+Unit <Const_C_MUSER_top> synthesized.
+
+Synthesizing Unit <Resultado_de_votacion_MUSER_top>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.vhf".
+    Summary:
+	no macro.
+Unit <Resultado_de_votacion_MUSER_top> synthesized.
+
+Synthesizing Unit <Remote_Lab>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Remote_Lab.vhd".
+    Found 8-bit register for signal <regEppAdr>.
+    Found 8-bit register for signal <regsw>.
+    Found 8-bit register for signal <regbtn>.
+    Found 17-bit register for signal <cnt>.
+    Found 17-bit adder for signal <cnt[16]_GND_23_o_add_9_OUT> created at line 173.
+    Found 4x4-bit Read Only RAM for signal <an>
+    Found 8-bit 4-to-1 multiplexer for signal <seg_int> created at line 179.
+    Found 8-bit 12-to-1 multiplexer for signal <_n0115> created at line 203.
+    Found 1-bit tristate buffer for signal <EppDB<7>> created at line 200
+    Found 1-bit tristate buffer for signal <EppDB<6>> created at line 200
+    Found 1-bit tristate buffer for signal <EppDB<5>> created at line 200
+    Found 1-bit tristate buffer for signal <EppDB<4>> created at line 200
+    Found 1-bit tristate buffer for signal <EppDB<3>> created at line 200
+    Found 1-bit tristate buffer for signal <EppDB<2>> created at line 200
+    Found 1-bit tristate buffer for signal <EppDB<1>> created at line 200
+    Found 1-bit tristate buffer for signal <EppDB<0>> created at line 200
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   8 Tristate(s).
+Unit <Remote_Lab> synthesized.
+
+Synthesizing Unit <Modulo>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Remote_Lab.vhd".
+    Found 1-bit register for signal <led_reg1>.
+    Found 1-bit register for signal <led_reg2>.
+    Found 1-bit register for signal <guardaDivision>.
+    Found 22-bit register for signal <tiempo_on>.
+    Found 22-bit register for signal <periodo>.
+    Found 4-bit register for signal <tono>.
+    Found 22-bit register for signal <counter>.
+    Found 22-bit adder for signal <counter[21]_GND_24_o_add_0_OUT> created at line 293.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  73 D-type flip-flop(s).
+Unit <Modulo> synthesized.
+
+Synthesizing Unit <Division>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Remote_Lab.vhd".
+    Summary:
+	inferred  36 Multiplexer(s).
+Unit <Division> synthesized.
+
+Synthesizing Unit <Genera_Tono>.
+    Related source file is "C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\Remote_Lab.vhd".
+WARNING:Xst:647 - Input <Periodo<3:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Genera_Tono> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x3-bit single-port Read Only RAM                    : 2
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 9
+ 17-bit adder                                          : 1
+ 22-bit adder                                          : 8
+# Registers                                            : 60
+ 1-bit register                                        : 24
+ 17-bit register                                       : 1
+ 22-bit register                                       : 24
+ 4-bit register                                        : 8
+ 8-bit register                                        : 3
+# Multiplexers                                         : 291
+ 4-bit 2-to-1 multiplexer                              : 288
+ 8-bit 12-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Cuenta_4votosVHDL>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_S> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <M>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <S>             |          |
+    -----------------------------------------------------------------------
+Unit <Cuenta_4votosVHDL> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Modulo>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <Modulo> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Remote_Lab>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_an> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cnt>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <an>            |          |
+    -----------------------------------------------------------------------
+Unit <Remote_Lab> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x3-bit single-port distributed Read Only RAM        : 2
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 9
+ 17-bit up counter                                     : 1
+ 22-bit up counter                                     : 8
+# Registers                                            : 432
+ Flip-Flops                                            : 432
+# Multiplexers                                         : 298
+ 1-bit 12-to-1 multiplexer                             : 8
+ 4-bit 2-to-1 multiplexer                              : 288
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <Modulo> ...
+
+Optimizing unit <Division> ...
+
+Optimizing unit <Cuenta_Votos_COMPLETO_MUSER_top> ...
+
+Optimizing unit <INV4_HXILINX_top> ...
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_0> <XLXI_255/U6/tiempo_on_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_1> <XLXI_255/U6/tiempo_on_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_2> <XLXI_255/U6/tiempo_on_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_3> <XLXI_255/U6/tiempo_on_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_4> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_4> <XLXI_255/U6/tiempo_on_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_5> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_5> <XLXI_255/U6/tiempo_on_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_6> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_6> <XLXI_255/U6/tiempo_on_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_7> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_7> <XLXI_255/U6/tiempo_on_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_8> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_8> <XLXI_255/U6/tiempo_on_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_9> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_9> <XLXI_255/U6/tiempo_on_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/guardaDivision> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/guardaDivision> <XLXI_255/U1/guardaDivision> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_7> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_8> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_9> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/guardaDivision> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/guardaDivision> <XLXI_255/U6/guardaDivision> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/led_reg1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/led_reg1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/led_reg2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/led_reg2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_10> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_10> <XLXI_255/U6/counter_10> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_11> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_11> <XLXI_255/U6/counter_11> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_12> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_12> <XLXI_255/U6/counter_12> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_13> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_13> <XLXI_255/U6/counter_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_14> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_14> <XLXI_255/U6/counter_14> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_15> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_15> <XLXI_255/U6/counter_15> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_20> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_20> <XLXI_255/U6/counter_20> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_16> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_16> <XLXI_255/U6/counter_16> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_21> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_21> <XLXI_255/U6/counter_21> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_17> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_17> <XLXI_255/U6/counter_17> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_18> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_18> <XLXI_255/U6/counter_18> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_19> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_19> <XLXI_255/U6/counter_19> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_0> <XLXI_255/U1/periodo_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_1> <XLXI_255/U1/periodo_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_2> <XLXI_255/U1/periodo_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_3> <XLXI_255/U1/periodo_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_4> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_4> <XLXI_255/U1/periodo_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_5> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_5> <XLXI_255/U1/periodo_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_6> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_6> <XLXI_255/U1/periodo_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_7> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_7> <XLXI_255/U1/periodo_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_8> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_8> <XLXI_255/U1/periodo_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_9> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_9> <XLXI_255/U1/periodo_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_10> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_10> <XLXI_255/U6/tiempo_on_10> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_11> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_11> <XLXI_255/U6/tiempo_on_11> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_12> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_12> <XLXI_255/U6/tiempo_on_12> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_13> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_13> <XLXI_255/U6/tiempo_on_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_14> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_14> <XLXI_255/U6/tiempo_on_14> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_15> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_15> <XLXI_255/U6/tiempo_on_15> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_20> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_20> <XLXI_255/U6/tiempo_on_20> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_16> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_16> <XLXI_255/U6/tiempo_on_16> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_21> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_21> <XLXI_255/U6/tiempo_on_21> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_17> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_17> <XLXI_255/U6/tiempo_on_17> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_18> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_18> <XLXI_255/U6/tiempo_on_18> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tiempo_on_19> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tiempo_on_19> <XLXI_255/U6/tiempo_on_19> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_10> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_10> <XLXI_255/U1/counter_10> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_11> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_11> <XLXI_255/U1/counter_11> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_12> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_12> <XLXI_255/U1/counter_12> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_13> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_13> <XLXI_255/U1/counter_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_14> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_14> <XLXI_255/U1/counter_14> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_20> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_20> <XLXI_255/U1/counter_20> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_15> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_15> <XLXI_255/U1/counter_15> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_21> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_21> <XLXI_255/U1/counter_21> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_16> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_16> <XLXI_255/U1/counter_16> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_17> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_17> <XLXI_255/U1/counter_17> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_18> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_18> <XLXI_255/U1/counter_18> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_10> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_10> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_19> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_19> <XLXI_255/U1/counter_19> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_11> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_11> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_12> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_12> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_13> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_14> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_14> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_15> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_15> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_20> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_20> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_21> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_21> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_16> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_16> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_17> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_17> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_18> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_18> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/periodo_19> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/periodo_19> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_7> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_8> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_9> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_0> <XLXI_255/U6/periodo_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/led_reg1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/led_reg1> <XLXI_255/U1/led_reg1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_1> <XLXI_255/U6/periodo_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/led_reg2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/led_reg2> <XLXI_255/U1/led_reg2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_2> <XLXI_255/U6/periodo_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_3> <XLXI_255/U6/periodo_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_10> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_10> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_4> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_4> <XLXI_255/U6/periodo_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_11> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_11> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_5> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_5> <XLXI_255/U6/periodo_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_12> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_12> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_6> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_6> <XLXI_255/U6/periodo_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_13> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_7> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_7> <XLXI_255/U6/periodo_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_14> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_14> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_8> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_8> <XLXI_255/U6/periodo_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_15> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_15> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_20> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_20> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_9> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_9> <XLXI_255/U6/periodo_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_16> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_16> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_21> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_21> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_17> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_17> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_18> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_18> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_19> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_19> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tono_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tono_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tono_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tono_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tono_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tono_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tono_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tono_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_0> <XLXI_255/U1/counter_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_1> <XLXI_255/U1/counter_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_2> <XLXI_255/U1/counter_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_3> <XLXI_255/U1/counter_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_4> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_4> <XLXI_255/U1/counter_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_5> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_5> <XLXI_255/U1/counter_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_6> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_6> <XLXI_255/U1/counter_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_7> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_7> <XLXI_255/U1/counter_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_8> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_8> <XLXI_255/U1/counter_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/counter_9> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/counter_9> <XLXI_255/U1/counter_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_7> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_8> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/tiempo_on_9> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/tiempo_on_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_0> <XLXI_255/U6/counter_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_1> <XLXI_255/U6/counter_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_10> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_10> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_2> <XLXI_255/U6/counter_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_11> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_11> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_3> <XLXI_255/U6/counter_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_12> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_12> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_4> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_4> <XLXI_255/U6/counter_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_13> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_5> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_5> <XLXI_255/U6/counter_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_14> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_14> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_6> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_6> <XLXI_255/U6/counter_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_15> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_15> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_20> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_20> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_7> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_7> <XLXI_255/U6/counter_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_16> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_16> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_21> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_21> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_8> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_8> <XLXI_255/U6/counter_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_17> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_17> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/counter_9> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/counter_9> <XLXI_255/U6/counter_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_18> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_18> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/counter_19> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/counter_19> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tono_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tono_0> <XLXI_255/U1/tono_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_0> <XLXI_255/U1/tiempo_on_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tono_1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tono_1> <XLXI_255/U1/tono_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_1> <XLXI_255/U1/tiempo_on_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tono_2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tono_2> <XLXI_255/U1/tono_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_2> <XLXI_255/U1/tiempo_on_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tono_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tono_3> <XLXI_255/U1/tono_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_3> <XLXI_255/U1/tiempo_on_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_4> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_4> <XLXI_255/U1/tiempo_on_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_5> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_5> <XLXI_255/U1/tiempo_on_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_6> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_6> <XLXI_255/U1/tiempo_on_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_7> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_7> <XLXI_255/U1/tiempo_on_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_8> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_8> <XLXI_255/U1/tiempo_on_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_9> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_9> <XLXI_255/U1/tiempo_on_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_10> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_10> <XLXI_255/U1/tiempo_on_10> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/led_reg1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/led_reg1> <XLXI_255/U6/led_reg1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_11> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_11> <XLXI_255/U1/tiempo_on_11> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/led_reg2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/led_reg2> <XLXI_255/U6/led_reg2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_12> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_12> <XLXI_255/U1/tiempo_on_12> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_13> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_13> <XLXI_255/U1/tiempo_on_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_14> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_14> <XLXI_255/U1/tiempo_on_14> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_20> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_20> <XLXI_255/U1/tiempo_on_20> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_15> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_15> <XLXI_255/U1/tiempo_on_15> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_21> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_21> <XLXI_255/U1/tiempo_on_21> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_16> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_16> <XLXI_255/U1/tiempo_on_16> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_17> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_17> <XLXI_255/U1/tiempo_on_17> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_18> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_18> <XLXI_255/U1/tiempo_on_18> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/tiempo_on_19> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/tiempo_on_19> <XLXI_255/U1/tiempo_on_19> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_10> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_10> <XLXI_255/U6/periodo_10> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_11> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_11> <XLXI_255/U6/periodo_11> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_12> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_12> <XLXI_255/U6/periodo_12> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_13> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_13> <XLXI_255/U6/periodo_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_14> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_14> <XLXI_255/U6/periodo_14> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_20> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_20> <XLXI_255/U6/periodo_20> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_15> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_15> <XLXI_255/U6/periodo_15> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_16> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_16> <XLXI_255/U6/periodo_16> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_21> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_21> <XLXI_255/U6/periodo_21> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_17> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_17> <XLXI_255/U6/periodo_17> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_18> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_18> <XLXI_255/U6/periodo_18> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/periodo_19> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/periodo_19> <XLXI_255/U6/periodo_19> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U5/guardaDivision> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <XLXI_255/U4/guardaDivision> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tono_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tono_0> <XLXI_255/U6/tono_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tono_1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tono_1> <XLXI_255/U6/tono_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tono_2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tono_2> <XLXI_255/U6/tono_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U8/tono_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U7/tono_3> <XLXI_255/U6/tono_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_10> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_10> <XLXI_255/U1/periodo_10> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_11> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_11> <XLXI_255/U1/periodo_11> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_12> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_12> <XLXI_255/U1/periodo_12> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_13> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_13> <XLXI_255/U1/periodo_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_14> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_14> <XLXI_255/U1/periodo_14> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_15> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_15> <XLXI_255/U1/periodo_15> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_20> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_20> <XLXI_255/U1/periodo_20> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_16> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_16> <XLXI_255/U1/periodo_16> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_21> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_21> <XLXI_255/U1/periodo_21> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_17> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_17> <XLXI_255/U1/periodo_17> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_18> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_18> <XLXI_255/U1/periodo_18> 
+INFO:Xst:2261 - The FF/Latch <XLXI_255/U3/periodo_19> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_255/U2/periodo_19> <XLXI_255/U1/periodo_19> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 260
+ Flip-Flops                                            : 260
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 874
+#      AND2                        : 27
+#      AND2B1                      : 32
+#      AND3                        : 15
+#      AND3B1                      : 16
+#      AND3B2                      : 16
+#      AND3B3                      : 4
+#      AND4                        : 2
+#      AND4B1                      : 16
+#      AND4B2                      : 12
+#      AND4B3                      : 20
+#      BUF                         : 5
+#      GND                         : 1
+#      INV                         : 20
+#      LUT1                        : 79
+#      LUT2                        : 20
+#      LUT3                        : 16
+#      LUT4                        : 17
+#      LUT5                        : 52
+#      LUT6                        : 245
+#      MUXCY                       : 79
+#      MUXF7                       : 29
+#      OR2                         : 15
+#      OR3                         : 12
+#      OR4                         : 16
+#      VCC                         : 1
+#      XOR2                        : 24
+#      XORCY                       : 83
+# FlipFlops/Latches                : 260
+#      FD                          : 26
+#      FDE                         : 156
+#      FDR                         : 78
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 43
+#      IBUF                        : 12
+#      IBUFG                       : 1
+#      IOBUF                       : 8
+#      OBUF                        : 22
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             260  out of  18224     1%  
+ Number of Slice LUTs:                  449  out of   9112     4%  
+    Number used as Logic:               449  out of   9112     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    580
+   Number with an unused Flip Flop:     320  out of    580    55%  
+   Number with an unused LUT:           131  out of    580    22%  
+   Number of fully used LUT-FF pairs:   129  out of    580    22%  
+   Number of unique control sets:        16
+
+IO Utilization: 
+ Number of IOs:                          48
+ Number of bonded IOBs:                  43  out of    232    18%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | IBUFG+BUFG             | 236   |
+EppDSTB                            | IBUF+BUFG              | 16    |
+EppASTB                            | IBUF+BUFG              | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.353ns (Maximum Frequency: 157.406MHz)
+   Minimum input arrival time before clock: 28.137ns
+   Maximum output required time after clock: 27.726ns
+   Maximum combinational path delay: 28.565ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.353ns (frequency: 157.406MHz)
+  Total number of paths / destination ports: 12309 / 443
+-------------------------------------------------------------------------
+Delay:               6.353ns (Levels of Logic = 6)
+  Source:            XLXI_255/U8/periodo_17 (FF)
+  Destination:       XLXI_255/U8/tono_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_255/U8/periodo_17 to XLXI_255/U8/tono_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.447   1.085  XLXI_255/U8/periodo_17 (XLXI_255/U8/periodo_17)
+     LUT3:I0->O           12   0.205   1.137  XLXI_255/U8/U1/Mmux_p1411 (XLXI_255/U8/U1/Mmux_p141)
+     LUT5:I2->O            1   0.205   0.684  XLXI_255/U8/U1/Mmux_t_o248_SW1 (N234)
+     LUT6:I4->O            8   0.203   1.167  XLXI_255/U8/U1/Mmux_t_o249 (XLXI_255/U8/U1/t_o<3>)
+     LUT6:I0->O            1   0.203   0.000  XLXI_255/U8/U1/U1/Tono<2>_F (N286)
+     MUXF7:I0->O           1   0.131   0.580  XLXI_255/U8/U1/U1/Tono<2> (XLXI_255/U8/div<2>)
+     LUT5:I4->O            1   0.205   0.000  XLXI_255/U8/tono_2_glue_set (XLXI_255/U8/tono_2_glue_set)
+     FDR:D                     0.102          XLXI_255/U8/tono_2
+    ----------------------------------------
+    Total                      6.353ns (1.701ns logic, 4.652ns route)
+                                       (26.8% logic, 73.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'EppDSTB'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.990ns (Levels of Logic = 3)
+  Source:            EppWRITE (PAD)
+  Destination:       XLXI_255/regbtn_7 (FF)
+  Destination Clock: EppDSTB rising
+
+  Data Path: EppWRITE to XLXI_255/regbtn_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.617  EppWRITE_IBUF (EppWRITE_IBUF)
+     LUT4:I3->O            2   0.205   0.617  XLXI_255/_n0129_inv_SW0 (N2)
+     LUT6:I5->O            8   0.205   0.802  XLXI_255/_n0129_inv (XLXI_255/_n0129_inv)
+     FDE:CE                    0.322          XLXI_255/regbtn_0
+    ----------------------------------------
+    Total                      3.990ns (1.954ns logic, 2.036ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'EppASTB'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              3.370ns (Levels of Logic = 2)
+  Source:            EppWRITE (PAD)
+  Destination:       XLXI_255/regEppAdr_7 (FF)
+  Destination Clock: EppASTB rising
+
+  Data Path: EppWRITE to XLXI_255/regEppAdr_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  EppWRITE_IBUF (EppWRITE_IBUF)
+     INV:I->O             16   0.206   1.004  XLXI_255/EppWRITE_inv1_INV_0 (XLXI_255/EppWRITE_inv)
+     FDE:CE                    0.322          XLXI_255/regEppAdr_0
+    ----------------------------------------
+    Total                      3.370ns (1.750ns logic, 1.620ns route)
+                                       (51.9% logic, 48.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 37870 / 27
+-------------------------------------------------------------------------
+Offset:              28.137ns (Levels of Logic = 25)
+  Source:            sw<5> (PAD)
+  Destination:       XLXI_255/U5/tono_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sw<5> to XLXI_255/U5/tono_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.684  sw_5_IBUF (sw_5_IBUF)
+     LUT2:I0->O            3   0.203   1.015  XLXI_255/swInternal<5>1 (swInternal<5>)
+     LUT6:I0->O            2   0.203   0.981  XLXI_241/XLXI_2/XLXI_2/SB<0>1 (XLXI_241/XLXI_2/XLXI_2/SB<0>)
+     XOR2:I0->O            2   0.203   0.961  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXI_1 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXN_8)
+     AND2:I1->O            1   0.223   0.924  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXI_4 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXN_7)
+     OR2:I1->O             2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXI_5 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/C1)
+     AND2:I0->O            1   0.203   0.924  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_2/XLXI_4 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_2/XLXN_7)
+     OR2:I1->O             2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_2/XLXI_5 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/C2)
+     AND2:I0->O            1   0.203   0.924  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_3/XLXI_4 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_3/XLXN_7)
+     OR2:I1->O             2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_3/XLXI_5 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/C3_DUMMY)
+     XOR2:I0->O           23   0.203   1.153  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_4/XLXI_2 (XLXI_241/XLXI_2/SVF_DUMMY<3>)
+     begin scope: 'XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_6:I0'
+     INV:I->O              2   0.206   0.961  O01_INV_0 (O0)
+     end scope: 'XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_6:O0'
+     XOR2:I1->O            2   0.223   0.961  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_19/XLXI_4/XLXI_1 (XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_19/XLXI_4/XLXN_8)
+     XOR2:I1->O            2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_19/XLXI_4/XLXI_2 (XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXN_117)
+     XOR2:I0->O            2   0.203   0.961  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_18/XLXI_4/XLXI_1 (XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_18/XLXI_4/XLXN_8)
+     XOR2:I1->O           26   0.223   1.206  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_18/XLXI_4/XLXI_2 (XLXI_241/XLXI_2/SVC_DUMMY<3>)
+     INV:I->O              2   0.568   0.961  XLXI_241/XLXI_2/XLXI_12/XLXI_24 (XLXI_241/XLXI_2/XLXI_12/XLXN_44)
+     AND4:I1->O            1   0.223   0.924  XLXI_241/XLXI_2/XLXI_12/XLXI_26 (XLXI_241/XLXI_2/XLXI_12/XLXN_46)
+     OR2:I1->O             1   0.223   0.944  XLXI_241/XLXI_2/XLXI_12/XLXI_27 (XLXI_241/XLXI_2/XLXI_12/XLXN_52)
+     AND2:I0->O            2   0.203   0.616  XLXI_241/XLXI_2/XLXI_12/XLXI_31 (LedInternal<3>)
+     BUF:I->O              7   0.568   0.774  XLXI_241/XLXI_2/XLXI_12/XLXI_45 (LedInternal<4>)
+     LUT5:I4->O            2   0.205   0.845  XLXI_255/U5/limite_led_AND_148_o1 (XLXI_255/U5/limite_led_AND_148_o)
+     LUT5:I2->O            1   0.205   0.580  XLXI_255/U5/U1/U1/Tono<3>1_SW1 (N183)
+     LUT6:I5->O            1   0.205   0.000  XLXI_255/U5/tono_3_glue_set (XLXI_255/U5/tono_3_glue_set)
+     FDR:D                     0.102          XLXI_255/U5/tono_3
+    ----------------------------------------
+    Total                     28.137ns (6.912ns logic, 21.225ns route)
+                                       (24.6% logic, 75.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 46 / 19
+-------------------------------------------------------------------------
+Offset:              5.851ns (Levels of Logic = 4)
+  Source:            XLXI_255/U8/tono_0 (FF)
+  Destination:       DB<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: XLXI_255/U8/tono_0 to DB<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.447   0.898  XLXI_255/U8/tono_0 (XLXI_255/U8/tono_0)
+     LUT6:I2->O            1   0.203   0.000  XLXI_255/mux_6 (XLXI_255/mux_6)
+     MUXF7:I1->O           1   0.140   0.808  XLXI_255/mux_5_f7 (XLXI_255/mux_5_f7)
+     LUT6:I3->O            1   0.205   0.579  XLXI_255/Mmux_busEppInternal13 (XLXI_255/busEppInternal<0>)
+     IOBUF:I->IO               2.571          DB_0_IOBUF (DB<0>)
+    ----------------------------------------
+    Total                      5.851ns (3.566ns logic, 2.285ns route)
+                                       (60.9% logic, 39.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'EppDSTB'
+  Total number of paths / destination ports: 48448 / 23
+-------------------------------------------------------------------------
+Offset:              27.726ns (Levels of Logic = 22)
+  Source:            XLXI_255/regsw_5 (FF)
+  Destination:       Led<4> (PAD)
+  Source Clock:      EppDSTB rising
+
+  Data Path: XLXI_255/regsw_5 to Led<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.617  XLXI_255/regsw_5 (XLXI_255/regsw_5)
+     LUT2:I1->O            3   0.205   1.015  XLXI_255/swInternal<5>1 (swInternal<5>)
+     LUT6:I0->O            2   0.203   0.981  XLXI_241/XLXI_2/XLXI_2/SB<0>1 (XLXI_241/XLXI_2/XLXI_2/SB<0>)
+     XOR2:I0->O            2   0.203   0.961  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXI_1 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXN_8)
+     AND2:I1->O            1   0.223   0.924  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXI_4 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXN_7)
+     OR2:I1->O             2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXI_5 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/C1)
+     AND2:I0->O            1   0.203   0.924  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_2/XLXI_4 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_2/XLXN_7)
+     OR2:I1->O             2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_2/XLXI_5 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/C2)
+     AND2:I0->O            1   0.203   0.924  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_3/XLXI_4 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_3/XLXN_7)
+     OR2:I1->O             2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_3/XLXI_5 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/C3_DUMMY)
+     XOR2:I0->O           23   0.203   1.153  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_4/XLXI_2 (XLXI_241/XLXI_2/SVF_DUMMY<3>)
+     begin scope: 'XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_6:I0'
+     INV:I->O              2   0.206   0.961  O01_INV_0 (O0)
+     end scope: 'XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_6:O0'
+     XOR2:I1->O            2   0.223   0.961  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_19/XLXI_4/XLXI_1 (XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_19/XLXI_4/XLXN_8)
+     XOR2:I1->O            2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_19/XLXI_4/XLXI_2 (XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXN_117)
+     XOR2:I0->O            2   0.203   0.961  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_18/XLXI_4/XLXI_1 (XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_18/XLXI_4/XLXN_8)
+     XOR2:I1->O           26   0.223   1.206  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_18/XLXI_4/XLXI_2 (XLXI_241/XLXI_2/SVC_DUMMY<3>)
+     INV:I->O              2   0.568   0.961  XLXI_241/XLXI_2/XLXI_12/XLXI_24 (XLXI_241/XLXI_2/XLXI_12/XLXN_44)
+     AND4:I1->O            1   0.223   0.924  XLXI_241/XLXI_2/XLXI_12/XLXI_26 (XLXI_241/XLXI_2/XLXI_12/XLXN_46)
+     OR2:I1->O             1   0.223   0.944  XLXI_241/XLXI_2/XLXI_12/XLXI_27 (XLXI_241/XLXI_2/XLXI_12/XLXN_52)
+     AND2:I0->O            2   0.203   0.616  XLXI_241/XLXI_2/XLXI_12/XLXI_31 (LedInternal<3>)
+     BUF:I->O              7   0.568   0.773  XLXI_241/XLXI_2/XLXI_12/XLXI_45 (LedInternal<4>)
+     OBUF:I->O                 2.571          Led_4_OBUF (Led<4>)
+    ----------------------------------------
+    Total                     27.726ns (7.993ns logic, 19.733ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'EppASTB'
+  Total number of paths / destination ports: 114 / 8
+-------------------------------------------------------------------------
+Offset:              7.333ns (Levels of Logic = 4)
+  Source:            XLXI_255/regEppAdr_2 (FF)
+  Destination:       DB<0> (PAD)
+  Source Clock:      EppASTB rising
+
+  Data Path: XLXI_255/regEppAdr_2 to DB<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             18   0.447   1.278  XLXI_255/regEppAdr_2 (XLXI_255/regEppAdr_2)
+     LUT3:I0->O            1   0.205   0.924  XLXI_255/Mmux_busEppInternal11 (XLXI_255/Mmux_busEppInternal1)
+     LUT5:I0->O            1   0.203   0.924  XLXI_255/Mmux_busEppInternal12 (XLXI_255/Mmux_busEppInternal11)
+     LUT6:I1->O            1   0.203   0.579  XLXI_255/Mmux_busEppInternal13 (XLXI_255/busEppInternal<0>)
+     IOBUF:I->IO               2.571          DB_0_IOBUF (DB<0>)
+    ----------------------------------------
+    Total                      7.333ns (3.629ns logic, 3.704ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 48451 / 24
+-------------------------------------------------------------------------
+Delay:               28.565ns (Levels of Logic = 23)
+  Source:            sw<5> (PAD)
+  Destination:       Led<4> (PAD)
+
+  Data Path: sw<5> to Led<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.684  sw_5_IBUF (sw_5_IBUF)
+     LUT2:I0->O            3   0.203   1.015  XLXI_255/swInternal<5>1 (swInternal<5>)
+     LUT6:I0->O            2   0.203   0.981  XLXI_241/XLXI_2/XLXI_2/SB<0>1 (XLXI_241/XLXI_2/XLXI_2/SB<0>)
+     XOR2:I0->O            2   0.203   0.961  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXI_1 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXN_8)
+     AND2:I1->O            1   0.223   0.924  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXI_4 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXN_7)
+     OR2:I1->O             2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_1/XLXI_5 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/C1)
+     AND2:I0->O            1   0.203   0.924  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_2/XLXI_4 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_2/XLXN_7)
+     OR2:I1->O             2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_2/XLXI_5 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/C2)
+     AND2:I0->O            1   0.203   0.924  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_3/XLXI_4 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_3/XLXN_7)
+     OR2:I1->O             2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_3/XLXI_5 (XLXI_241/XLXI_2/XLXI_2/XLXI_43/C3_DUMMY)
+     XOR2:I0->O           23   0.203   1.153  XLXI_241/XLXI_2/XLXI_2/XLXI_43/XLXI_4/XLXI_2 (XLXI_241/XLXI_2/SVF_DUMMY<3>)
+     begin scope: 'XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_6:I0'
+     INV:I->O              2   0.206   0.961  O01_INV_0 (O0)
+     end scope: 'XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_6:O0'
+     XOR2:I1->O            2   0.223   0.961  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_19/XLXI_4/XLXI_1 (XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_19/XLXI_4/XLXN_8)
+     XOR2:I1->O            2   0.223   0.981  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_17/XLXI_19/XLXI_4/XLXI_2 (XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXN_117)
+     XOR2:I0->O            2   0.203   0.961  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_18/XLXI_4/XLXI_1 (XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_18/XLXI_4/XLXN_8)
+     XOR2:I1->O           26   0.223   1.206  XLXI_241/XLXI_2/XLXI_2/XLXI_44/XLXI_18/XLXI_4/XLXI_2 (XLXI_241/XLXI_2/SVC_DUMMY<3>)
+     INV:I->O              2   0.568   0.961  XLXI_241/XLXI_2/XLXI_12/XLXI_24 (XLXI_241/XLXI_2/XLXI_12/XLXN_44)
+     AND4:I1->O            1   0.223   0.924  XLXI_241/XLXI_2/XLXI_12/XLXI_26 (XLXI_241/XLXI_2/XLXI_12/XLXN_46)
+     OR2:I1->O             1   0.223   0.944  XLXI_241/XLXI_2/XLXI_12/XLXI_27 (XLXI_241/XLXI_2/XLXI_12/XLXN_52)
+     AND2:I0->O            2   0.203   0.616  XLXI_241/XLXI_2/XLXI_12/XLXI_31 (LedInternal<3>)
+     BUF:I->O              7   0.568   0.773  XLXI_241/XLXI_2/XLXI_12/XLXI_45 (LedInternal<4>)
+     OBUF:I->O                 2.571          Led_4_OBUF (Led<4>)
+    ----------------------------------------
+    Total                     28.565ns (8.766ns logic, 19.799ns route)
+                                       (30.7% logic, 69.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock EppDSTB
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+EppASTB        |    3.494|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+EppDSTB        |   27.298|         |         |         |
+clk            |    6.353|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.91 secs
+ 
+--> 
+
+Total memory usage is 4520428 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :  230 (   0 filtered)
+

@@ -1,0 +1,54 @@
+xst -intstyle ise -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/iseconfig/filter.filter" -ifn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/top.xst" -ofn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/top.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
+map -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/iseconfig/filter.filter" -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -filter C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf Nexys3_Master.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/iseconfig/filter.filter" -ifn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/top.xst" -ofn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/top.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
+map -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/iseconfig/filter.filter" -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -filter C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_21_05_26/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf Nexys3_Master.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/iseconfig/filter.filter" -ifn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/top.xst" -ofn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/top.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
+map -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/iseconfig/filter.filter" -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -filter C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf Nexys3_Master.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/iseconfig/filter.filter" -ifn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/top.xst" -ofn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/top.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
+map -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/iseconfig/filter.filter" -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -filter C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v4_21_05_26/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf Nexys3_Master.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_24_05_26/iseconfig/filter.filter" -ifn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_24_05_26/top.xst" -ofn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_24_05_26/top.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
+map -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_24_05_26/iseconfig/filter.filter" -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_24_05_26/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -filter C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_v2_24_05_26/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf Nexys3_Master.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/iseconfig/filter.filter" -ifn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/top.xst" -ofn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/top.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
+map -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/iseconfig/filter.filter" -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -filter C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf Nexys3_Master.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/iseconfig/filter.filter" -ifn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/top.xst" -ofn "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/top.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
+map -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/iseconfig/filter.filter" -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -filter "C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -filter C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf Nexys3_Master.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -filter "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/iseconfig/filter.filter" -ifn "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/top.xst" -ofn "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/top.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
+map -filter "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/iseconfig/filter.filter" -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -filter "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -filter C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf Nexys3_Master.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -filter "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/iseconfig/filter.filter" -ifn "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/top.xst" -ofn "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/top.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
+map -filter "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/iseconfig/filter.filter" -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -filter "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -filter C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf Nexys3_Master.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f top.ut top.ncd 

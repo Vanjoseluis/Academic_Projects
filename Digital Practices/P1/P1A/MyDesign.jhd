@@ -1,0 +1,3 @@
+MODULE MyDesign
+	SUBMODULE Modulo_general
+		INSTANCE XLXI_2

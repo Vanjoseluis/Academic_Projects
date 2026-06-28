@@ -1,0 +1,13 @@
+MODULE Visualiza_Cuenta
+	SUBMODULE Hexadecimal_7Segmentos
+		INSTANCE XLXI_1
+	SUBMODULE Hexadecimal_7Segmentos
+		INSTANCE XLXI_2
+	SUBMODULE Hexadecimal_7Segmentos
+		INSTANCE XLXI_3
+	SUBMODULE Hexadecimal_7Segmentos
+		INSTANCE XLXI_4
+	SUBMODULE Const_F
+		INSTANCE XLXI_5
+	SUBMODULE Const_C
+		INSTANCE XLXI_6

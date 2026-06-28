@@ -1,0 +1,2 @@
+vhdl isim_temp "Cuenta_4votos.vhd"
+vhdl isim_temp "Cuenta_4votosVHDL_Test.vhd"

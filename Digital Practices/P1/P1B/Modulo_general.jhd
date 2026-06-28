@@ -1,0 +1,7 @@
+MODULE Modulo_general
+	SUBMODULE Cuenta_Votos_COMPLETO
+		INSTANCE XLXI_2
+	SUBMODULE Visualiza_Cuenta
+		INSTANCE XLXI_9
+	SUBMODULE Resultado_de_votacion
+		INSTANCE XLXI_12

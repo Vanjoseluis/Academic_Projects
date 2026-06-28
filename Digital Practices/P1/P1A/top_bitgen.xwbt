@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.ncd
+OUTFILE=C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26\top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\edie\Desktop\RLab_Plant_Jose_Raul2_16-04-26
+LICENSE=WebPack
+USER_INFO=174171296_177879519_210718097_125

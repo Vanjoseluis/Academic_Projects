@@ -1,0 +1,11 @@
+[Inputs]
+VF
+VC
+ENA
+CLR
+CK
+[Outputs]
+VF_C
+V_R
+led_V
+[BiDir]

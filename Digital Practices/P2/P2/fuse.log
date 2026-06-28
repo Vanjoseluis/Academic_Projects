@@ -1,0 +1,34 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/Control_Control_sch_tb_isim_beh.exe -prj C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/Control_Control_sch_tb_beh.prj work.Control_Control_sch_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 6
+Turning on mult-threading, number of parallel sub-compilation jobs: 12 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/Control_TEST2.vhd" into library work
+Parsing VHDL file "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/Control_Combinacional.vhf" into library work
+Parsing VHDL file "C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/Control.vhf" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling architecture and4b3_v of entity AND4B3 [and4b3_default]
+Compiling architecture and3b2_v of entity AND3B2 [and3b2_default]
+Compiling architecture and3_v of entity AND3 [and3_default]
+Compiling architecture and4b1_v of entity AND4B1 [and4b1_default]
+Compiling architecture or4_v of entity OR4 [or4_default]
+Compiling architecture and3b1_v of entity AND3B1 [and3b1_default]
+Compiling architecture and4b2_v of entity AND4B2 [and4b2_default]
+Compiling architecture or3_v of entity OR3 [or3_default]
+Compiling architecture behavioral of entity Control_Combinacional_MUSER_Control [control_combinacional_muser_cont...]
+Compiling architecture fdc_v of entity FDC [\FDC('0')\]
+Compiling architecture and2b2_v of entity AND2B2 [and2b2_default]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture behavioral of entity Control [control_default]
+Compiling architecture behavioral of entity control_control_sch_tb
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 31 VHDL Units
+Built simulation executable C:/Users/edie/Desktop/Practica2_JoseLuis_Raul_26_05_26/Control_Control_sch_tb_isim_beh.exe
+Fuse Memory Usage: 50560 KB
+Fuse CPU Usage: 484 ms

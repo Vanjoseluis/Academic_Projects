@@ -1,0 +1,3 @@
+vhdl work "Control_TEST2.vhd"
+vhdl work "Control_Combinacional.vhf"
+vhdl work "Control.vhf"

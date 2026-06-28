@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/edie/Desktop/RLab_Plant_Jose_Raul2_16-04-26/Cuenta_4votosVHDL_Test_isim_beh.exe" -prj "C:/Users/edie/Desktop/RLab_Plant_Jose_Raul2_16-04-26/Cuenta_4votosVHDL_Test_beh.prj" "work.Cuenta_4votosVHDL_Test" 

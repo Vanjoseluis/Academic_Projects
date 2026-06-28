@@ -1,0 +1,4 @@
+vhdtdtfi -lib work Reg_Vot_VHDL_Exc.vhd -prj RL_23Pract1B -o Reg_Vot_VHDL_Exc.spl -module Reg_Vot_VHDL_Exc -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Reg_Vot_VHDL_Exc.spl C:/Users/edie/Desktop/RLab_Plant_Jose_Raul_07-05-26_1B/Reg_Vot_VHDL_Exc.sym 
+vhdtdtfi -lib work Reg_Vot_VHDL_Exc.vhd -prj RL_23Pract1B -o Reg_Vot_VHDL_Exc.spl -module Reg_Vot_VHDL_Exc -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Reg_Vot_VHDL_Exc.spl C:/Users/edie/Desktop/RLab_Plant_Jose_Raul_07-05-26_1B/Reg_Vot_VHDL_Exc.sym 

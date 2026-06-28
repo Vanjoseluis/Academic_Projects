@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Control_VHDL.vhd -prj LR_P3_23 -o Control_VHDL.spl -module Control_VHDL -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Control_VHDL.spl C:/Users/Usuario_UMA/Downloads/Practica2_JoseLuis_Raul_25_05_26/Control_VHDL.sym 

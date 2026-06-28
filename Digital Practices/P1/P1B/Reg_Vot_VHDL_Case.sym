@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Reg_Vot_VHDL_Case">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2026-5-7T8:45:27</timestamp>
+    <pin polarity="Input" x="0" y="-288" name="VF" />
+    <pin polarity="Input" x="0" y="-224" name="VC" />
+    <pin polarity="Input" x="0" y="-160" name="ENA" />
+    <pin polarity="Input" x="0" y="-96" name="CLR" />
+    <pin polarity="Input" x="0" y="-32" name="CK" />
+    <pin polarity="Output" x="384" y="-288" name="VF_C" />
+    <pin polarity="Output" x="384" y="-208" name="V_R" />
+    <pin polarity="Output" x="384" y="-128" name="led_V" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-328" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin VF" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin VC" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin ENA" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin CLR" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin CK" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-288" type="pin VF_C" />
+        <rect width="256" x="64" y="-320" height="320" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <line x2="384" y1="-288" y2="-288" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-208" type="pin V_R" />
+        <line x2="384" y1="-208" y2="-208" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-128" type="pin led_V" />
+        <line x2="384" y1="-128" y2="-128" x1="320" />
+    </graph>
+</symbol>

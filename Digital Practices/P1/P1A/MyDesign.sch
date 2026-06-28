@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan6" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <signal name="sw(7:0)" />
+        <signal name="btn(0)" />
+        <signal name="SevenSeg1(7:0)" />
+        <signal name="SevenSeg2(7:0)" />
+        <signal name="SevenSeg3(7:0)" />
+        <signal name="SevenSeg0(7:0)" />
+        <signal name="btn(4:0)" />
+        <signal name="Ck" />
+        <signal name="Leds(4:3)" />
+        <signal name="Leds(2:0)" />
+        <signal name="Leds(7:5)" />
+        <signal name="Leds(7:0)" />
+        <port polarity="Input" name="sw(7:0)" />
+        <port polarity="Output" name="SevenSeg1(7:0)" />
+        <port polarity="Output" name="SevenSeg2(7:0)" />
+        <port polarity="Output" name="SevenSeg3(7:0)" />
+        <port polarity="Output" name="SevenSeg0(7:0)" />
+        <port polarity="Input" name="btn(4:0)" />
+        <port polarity="Input" name="Ck" />
+        <port polarity="Output" name="Leds(7:0)" />
+        <blockdef name="Modulo_general">
+            <timestamp>2026-4-5T17:19:39</timestamp>
+            <rect width="256" x="64" y="-448" height="448" />
+            <line x2="0" y1="-416" y2="-416" x1="64" />
+            <rect width="64" x="0" y="-428" height="24" />
+            <line x2="384" y1="-352" y2="-352" x1="320" />
+            <rect width="64" x="320" y="-364" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <rect width="64" x="320" y="-172" height="24" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <rect width="64" x="320" y="-236" height="24" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <rect width="64" x="320" y="-300" height="24" />
+            <line x2="384" y1="-416" y2="-416" x1="320" />
+            <rect width="64" x="320" y="-428" height="24" />
+            <line x2="0" y1="-352" y2="-352" x1="64" />
+        </blockdef>
+        <block symbolname="Modulo_general" name="XLXI_2">
+            <blockpin signalname="sw(7:0)" name="M(7:0)" />
+            <blockpin signalname="Leds(4:3)" name="NA(1:0)" />
+            <blockpin signalname="SevenSeg3(7:0)" name="SevenSeg_C(7:0)" />
+            <blockpin signalname="SevenSeg1(7:0)" name="SevenSeg_F(7:0)" />
+            <blockpin signalname="SevenSeg2(7:0)" name="SevenSeg_VC(7:0)" />
+            <blockpin signalname="SevenSeg0(7:0)" name="SevenSeg_VF(7:0)" />
+            <blockpin signalname="Leds(2:0)" name="VC(2:0)" />
+            <blockpin signalname="Leds(7:5)" name="VF(2:0)" />
+            <blockpin signalname="btn(0)" name="VVal" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <attr value="Inch" name="LengthUnitName" />
+        <attr value="10" name="GridsPerUnit" />
+        <branch name="sw(7:0)">
+            <wire x2="992" y1="960" y2="960" x1="944" />
+            <wire x2="1104" y1="960" y2="960" x1="992" />
+        </branch>
+        <branch name="btn(0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="800" y="1360" type="branch" />
+            <wire x2="992" y1="1360" y2="1360" x1="800" />
+            <wire x2="1104" y1="1024" y2="1024" x1="992" />
+            <wire x2="992" y1="1024" y2="1104" x1="992" />
+            <wire x2="992" y1="1104" y2="1360" x1="992" />
+        </branch>
+        <branch name="SevenSeg1(7:0)">
+            <wire x2="1584" y1="1280" y2="1280" x1="1488" />
+            <wire x2="1744" y1="1280" y2="1280" x1="1584" />
+        </branch>
+        <iomarker fontsize="28" x="1744" y="1280" name="SevenSeg1(7:0)" orien="R0" />
+        <branch name="SevenSeg2(7:0)">
+            <wire x2="1584" y1="1216" y2="1216" x1="1488" />
+            <wire x2="1744" y1="1216" y2="1216" x1="1584" />
+        </branch>
+        <iomarker fontsize="28" x="1744" y="1216" name="SevenSeg2(7:0)" orien="R0" />
+        <branch name="SevenSeg3(7:0)">
+            <wire x2="1504" y1="1344" y2="1344" x1="1488" />
+            <wire x2="1744" y1="1344" y2="1344" x1="1504" />
+        </branch>
+        <branch name="SevenSeg0(7:0)">
+            <wire x2="1504" y1="1152" y2="1152" x1="1488" />
+            <wire x2="1744" y1="1152" y2="1152" x1="1504" />
+        </branch>
+        <branch name="btn(4:0)">
+            <wire x2="256" y1="208" y2="416" x1="256" />
+        </branch>
+        <branch name="Ck">
+            <wire x2="384" y1="208" y2="400" x1="384" />
+        </branch>
+        <iomarker fontsize="28" x="256" y="208" name="btn(4:0)" orien="R270" />
+        <iomarker fontsize="28" x="384" y="208" name="Ck" orien="R270" />
+        <iomarker fontsize="28" x="944" y="960" name="sw(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="1744" y="1152" name="SevenSeg0(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="1744" y="1344" name="SevenSeg3(7:0)" orien="R0" />
+        <branch name="Leds(4:3)">
+            <wire x2="1712" y1="1024" y2="1024" x1="1488" />
+            <wire x2="1712" y1="960" y2="1024" x1="1712" />
+        </branch>
+        <branch name="Leds(2:0)">
+            <wire x2="1808" y1="1088" y2="1088" x1="1488" />
+            <wire x2="1808" y1="960" y2="1088" x1="1808" />
+        </branch>
+        <branch name="Leds(7:5)">
+            <wire x2="1616" y1="960" y2="960" x1="1488" />
+        </branch>
+        <branch name="Leds(7:0)">
+            <wire x2="1616" y1="864" y2="864" x1="1584" />
+            <wire x2="1712" y1="864" y2="864" x1="1616" />
+            <wire x2="1808" y1="864" y2="864" x1="1712" />
+            <wire x2="1888" y1="864" y2="864" x1="1808" />
+        </branch>
+        <bustap x2="1616" y1="864" y2="960" x1="1616" />
+        <bustap x2="1712" y1="864" y2="960" x1="1712" />
+        <bustap x2="1808" y1="864" y2="960" x1="1808" />
+        <iomarker fontsize="28" x="1888" y="864" name="Leds(7:0)" orien="R0" />
+        <instance x="1104" y="1376" name="XLXI_2" orien="R0">
+        </instance>
+    </sheet>
+</drawing>

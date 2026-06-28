@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="RL_23Pract1B" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Hexadecimal C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|Hexadecimal.sch</ClosedNode>
+         <ClosedNode>/top C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|top.sch/XLXI_241 - MyDesign/XLXI_291 - Modulo_general</ClosedNode>
+         <ClosedNode>/top C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|top.sch/XLXI_255 - Remote_Lab - Behavioral/U1 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/top C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|top.sch/XLXI_255 - Remote_Lab - Behavioral/U2 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/top C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|top.sch/XLXI_255 - Remote_Lab - Behavioral/U3 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/top C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|top.sch/XLXI_255 - Remote_Lab - Behavioral/U4 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/top C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|top.sch/XLXI_255 - Remote_Lab - Behavioral/U5 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/top C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|top.sch/XLXI_255 - Remote_Lab - Behavioral/U6 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/top C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|top.sch/XLXI_255 - Remote_Lab - Behavioral/U7 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/top C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|top.sch/XLXI_255 - Remote_Lab - Behavioral/U8 - Modulo - Behavioral</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>XLXI_241 - MyDesign (C:/Users/edie/Desktop/RLab_Plant_Jose_Raul_07-05-26_1B/MyDesign.sch)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >15</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ef000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ef0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>XLXI_241 - MyDesign (C:/Users/edie/Desktop/RLab_Plant_Jose_Raul_07-05-26_1B/MyDesign.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Reg_Vot_VHDL_Case.vhd</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000264000000040101000100000000000000000000000064ffffffff000000810000000000000004000000af00000001000000000000009d0000000100000000000000660000000100000000000000b20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Reg_Vot_VHDL_Case.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000018a000000010001000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Create Schematic Symbol</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Create Schematic Symbol</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/top C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|top.sch/XLXI_241 - MyDesign</ClosedNode>
+         <ClosedNode>/top C:|Users|edie|Desktop|RLab_Plant_Jose_Raul_07-05-26_1B|top.sch/XLXI_255 - Remote_Lab - Behavioral</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Reg_Vot_Reg_Vot_sch_tb - behavioral (C:/Users/edie/Desktop/RLab_Plant_Jose_Raul_07-05-26_1B/Test_Reg_Vot.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c70000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Reg_Vot_Reg_Vot_sch_tb - behavioral (C:/Users/edie/Desktop/RLab_Plant_Jose_Raul_07-05-26_1B/Test_Reg_Vot.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+</Project>

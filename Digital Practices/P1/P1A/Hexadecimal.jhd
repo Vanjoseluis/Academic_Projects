@@ -1,0 +1,3 @@
+MODULE Hexadecimal
+	SUBMODULE Hexadecimal_7Segmentos
+		INSTANCE XLXI_244

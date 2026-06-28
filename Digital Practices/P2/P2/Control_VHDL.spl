@@ -1,0 +1,9 @@
+[Inputs]
+U
+R
+CLR
+Ck
+[Outputs]
+S
+=Q[2:0]=
+[BiDir]
