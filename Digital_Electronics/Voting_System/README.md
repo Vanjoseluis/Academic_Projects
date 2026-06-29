@@ -13,9 +13,9 @@ This project implements and verifies an electronic voting system for 8 voters, d
 | ``Combinational_design.pdf`` | Document | Practice 1A: combinational design, schematics, Karnaugh maps, simulations. |
 | ``Combinational_design_VHDL.pdf`` | Document | VHDL implementations of ``Cuenta4_votos`` (logic, IF, CASE) + shared testbench. |
 | ``Sequential_design.pdf`` | Document | Practice 1B: sequential design, vote register (``Reg_Vot``), state machine analysis. |
-| ``Combinational_design`` | Folder | First Part of the Practice, completely combinational |
-| ``Sequential_design`` | Folder | Second Part, which includes sequential module |
-| ``Diagrams`` | Folder | State Diagram and Test Bench Cronograms |
+| ``Combinational_design/`` | Folder | First Part of the Practice, completely combinational |
+| ``Sequential_design/`` | Folder | Second Part, which includes sequential module |
+| ``Diagrams/`` | Folder | State Diagram and Test Bench Cronograms |
 
 ---
 
