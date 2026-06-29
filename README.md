@@ -32,7 +32,7 @@ My main areas of interest include:
 | [GEMMA_FMS205](GEMMA_FMS205/) | Full control implementation of the FMS‑205 industrial station using TwinCAT 3, GEMMA, SFC/GRAFCET, pneumatic actuation, and HMI design | TwinCAT 3, ST, EtherCAT, GEMMA, SFC |
 | [Linux_TheConstruct_Project](Linux_TheConstruct_Project/) | Scripts developed during Linux training for robotics | Bash, Linux CLI |
 | [Python_TurtleBot_Project](Python_TurtleBot_Project/) | Python scripts controlling a TurtleBot in simulation | Python, ROS2, Gazebo |
-| [Digital_Practices](Digital_Practices)| Collection of Digital Electronics academic practices: combinational logic, sequential FSM design, boolean minimization, VHDL implementations, and FPGA simulations	| VHDL, Xilinx ISE, FSM Design, Digital Logic
+| [Digital_Electronics](Digital_Electronics)| Collection of Digital Electronics academic practices: combinational logic, sequential FSM design, boolean minimization, VHDL implementations, and FPGA simulations	| VHDL, Xilinx ISE, FSM Design, Digital Logic
 
 
 These academic projects laid the foundation for my current work in robotics software, including my recent contributions to the ROS 2 ecosystem and ros-controls.
