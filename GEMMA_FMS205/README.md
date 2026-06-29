@@ -1,5 +1,5 @@
 # GEMMA‑Based Control Design for FMS‑205 (TwinCAT 3)
-This repository contains the full implementation of the FMS‑205 automated station using TwinCAT 3, structured PLC programming, SFC/GRAFCET, and the GEMMA methodology for operational modes and safety logic.
+This repository contains the full implementation of the FMS‑205 automated station using TwinCAT 3, Beckhoff PLCs, structured PLC programming, SFC/GRAFCET, and the GEMMA methodology for operational modes and safety logic.
 
 The project includes a modular PLC architecture, task coordination, pneumatic actuation control, sensor integration, and a complete HMI developed with TwinCAT Visualizations.
 
