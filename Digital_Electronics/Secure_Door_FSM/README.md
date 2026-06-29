@@ -15,9 +15,9 @@ This practice was developed as part of the Digital Electronics course at the Uni
 ## Repository Contents
 | File / Folder | Type | Description |
 | --- | --- | --- |
-| ``P2_A2-08.pdf`` | Document | Full report: state machine design, boolean functions, schematics, VHDL, simulations. |
+| ``Sequential_design.pdf`` | Document | Full report: state machine design, boolean functions, schematics, VHDL, simulations. |
 | ``Cronograms/`` | Folder | State transition diagram and simulation chronograms. |
-| ``P2/`` | Folder | Project Folder with modules and tests |
+| ``Sequential_design/`` | Folder | Project Folder with modules and tests |
 
 ---
 # Technical Summary
